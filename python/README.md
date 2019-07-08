@@ -1,4 +1,9 @@
-Notes for Python
+# Notes for Python
 
-施工中
-
+	施工中
+Python是高階程式語言,具有以下特性:
+ - 動態數據
+ - 易讀
+ - 許多套件
+ - 物件導向
+ - 直譯,無須先編譯後執行
