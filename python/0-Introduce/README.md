@@ -1,2 +1,2 @@
 # Reference:
-[µ{¦¡»y¨¥±Ğ¾Ç»x](https://kaiching.org/pydoing/python.html)
+[ç¨‹å¼èªè¨€æ•™å­¸èªŒ](https://kaiching.org/pydoing/python.html)
