@@ -7,30 +7,19 @@
 	可跨行
 	用於函數中,可呼叫出
 
-# Python 的關鍵字與識別字
-## 關鍵字 keyword
-'''
-	False|	class|		finally|	is|			return
-	None|	continue|	for|		lambda|		try
-	True|	def|		from|		nonlocal|	while
-	and|	del|		global|		not|		with
-	as|		elif|		if|			or|			yield
-	assert|	else|		import|		pass|	
-	break|	except|		in|			raise|
-'''
-	種類	關鍵字
-	常數|	False None True
-	運算子|	and del in is lambda not or
-	簡單陳述|	as assert break continue from global import nonlocal pass raise return yield
-	複合陳述|	else elif except finally for if try while with
-	定義|	class def
+# 關鍵字 keyword
+|種類   | 關鍵字  |
+| ------------ | ------------ |
+|常數   |False None True   |
+|運算子   |and del in is lambda not or  |
+|簡單陳述   |as assert break continue from global import nonlocal pass raise return yield   |
+|複合陳述   |else elif except finally for if try while with   |
+|定義   |class def   |
 
-## 識別字 identifier
-'''
+# 識別字 identifier
 	_*
 	__*__
 	__*
-'''
 
 # 縮排 indentation
 	不可隨意縮排,否則易導致錯誤,如IndentationError
@@ -55,6 +44,7 @@
 	|	位元包含或	a | b
 	^	位元互斥或	a ^ b
 	~	位元相反	~a
+	
 	* 關係運算子 comparison operator
 	<	小於	a < b
 	>	大於	a > b
@@ -62,6 +52,7 @@
 	>=	大於等於	a >= b
 	==	相等	a == b
 	!=	不相等	a != b
+	
 	* 指派運算子 assignment operator
 	=	指派	a = b
 	+=	相加同時指派	a += b
@@ -78,10 +69,15 @@
 	>>=	向右位移同時指派	a >>= b
 
 # 分隔符號 delimiter
-	(	)	[	]	{	}
-	,	:	.	;	@	=
-	+=	-=	*=	/=	//=	%=
-	&=	|=	^=	<<=	>>=	**=
+|分隔符號	|功能
+|( )	|小括弧圍住的運算式會優先計算，函數 (function) 也用小括弧圍住參數列 (parameter list)
+|[ ]	|序列型態 (sequence type) 的索引符號，或用作定義串列 (list)
+|{ }	|用作定義字典 (dictionary)
+|,	|同一行中分隔多個運算式
+|:	|控制陳述條件 (condition) 後的分隔符號
+|.	|用為存取物件的方法 (method) 或屬性 (attribute)
+|;	|可作為單行程式結束的符號，也可不用
+|@	|用作函數或類別 (class) 定義的特殊標記
 
 # 字面常數 literal
 	* 字串字面常數
