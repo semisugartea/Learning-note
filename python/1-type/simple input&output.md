@@ -1,15 +1,33 @@
 # 輸入
+
 	* 使用input()可以輸入
 	>>> input("Enter something please: ")
 	Enter something please: This is what\nthe user enters!
 	'This is what\\nthe user enters!'
 
 # 輸出
-	* 使用print()可以顯示物件內容
+
+	* 使用print()或直譯器可以顯示物件內容,但有差異
 	
-	* 直譯器上直接輸入變數或物件也可顯示內容
+	* 直譯器上直接輸入字串會顯示引號,print()內輸入字串不顯示引號
 	
-	* 兩者最大差異在於print()會有跳脫序列的效果
+	>>> 'apple'
+	'apple'
+	>>> print('apple')
+	apple
+
+	
+	* 直譯器上以逗號區隔元素會形成元組, print()以逗號區隔元素會直接顯示內容
+
+	>>> str1='apple'
+	>>> 'str1:',str1
+	('str1:', 'apple')
+	>>> print('str1:',str1)
+	str1: apple
+	
+	* print()會有跳脫序列的效果, 直譯器則否
+	
+	
 |跳脫序列　　 |效果									|
 |　\a 　　　　|警示音(Alert bell)					|
 |　\b 　　　　|倒退一格(Backspace)					|
