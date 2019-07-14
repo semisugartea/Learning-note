@@ -1,13 +1,11 @@
-# 基本介紹
+# 列表(list)基本介紹 
 
-* 以方括號[]表示, 並使用逗號(,)區隔
+* 以方括號[]表示, 並使用逗號,區隔
 
 	>>> words = ["Hello", "world", "!"]
 	>>> list1 = [ 123, "abc", True]			#可同時包含不同型態
 
-
-
-* 方括號中沒有任何元素的串列稱為空串列(empty list)
+* 方括號中沒有任何元素的串列稱為空列表(empty list)
 
 * 與字串相似,列表可使用索引數(index)傳遞其中的元素
 
@@ -25,17 +23,16 @@
 	>>>print(things[2][2])
 	3
 
+# 與字串對比
 
-
-
-# 與字串差異
-
-* 與字串相似,列表可相加或相乘
+* 與字串相似,列表可相加
 
 	>>> str = words + list1
 	>>> str
 	['Hello', 'world', '!', 123, 'abc', True]
-	
+
+* 與字串相似,列表可利用乘以整數來重複
+
 	>>> str2 = words*3
 	>>> str2
 	['Hello', 'world', '!', 'Hello', 'world', '!', 'Hello', 'world', '!']
@@ -46,7 +43,7 @@
 	>>>squares[2:6]
 	[4, 9, 16, 25]
 
-* 與字串不同的是,列表可變(mutable)
+* 與字串不同的是,列表是可變的(mutable)
 
 	>>> str = 'apple'
 	>>> str[0] = 'b'
@@ -60,9 +57,7 @@
 
 # 關鍵字運算
 
-* in
-
-	使用in可確認元素是否在列表中
+* in	確認元素是否在列表中
 
 	>>>words = ["spam", "egg", "spam", "sausage"]
 	>>>"spam" in words
@@ -72,20 +67,20 @@
 	>>>"tomato" in words
 	False
 
-* not
-
-	not可置於判斷元素的前後
+* not in	確認元素是否不在列表中
 
 	>>>nums = [1, 2, 3]
-	>>>not 4 in nums
-	True
 	>>>4 not in nums
 	True
-	>>>not 3 in nums
-	False
 	>>>3 not in nums
 	False
 
+* del list[[起始:]終點[:步數]]		消除其中的元素,同slice運算原則
+
+	>>> words = ["Hello", "world", "!"]
+	>>> del words[1]
+	>>> words
+	['Hello', '!']
 
 # 利用函數形成列表
 
@@ -118,7 +113,9 @@
 
 **進階**
 
-* for迴圈
+* 列表推導式 list comprehension
+
+	* for迴圈
 
 	利用for迴圈可在[]內建立列表
 
@@ -126,7 +123,7 @@
 	>>>cubes
 	[0, 1, 8, 27, 64]
 
-* if陳述
+	* if陳述
 
 	利用if陳述可篩選元素
 	
@@ -161,22 +158,15 @@
 
 # 相關函數
 
-* del *list*
+* len(*list*)		讀取列表**元素個數**
+
+* max(*list*)		讀取列表中**最大值**
 	
-	可使用del消除其中的元素
+* min(*list*)		讀取列表中**最小值**
 
-	>>> words = ["Hello", "world", "!"]
-	>>> del words[1]
-	>>> words
-	['Hello', '!']
+* sum(*list*)		合計列表中的數字
 
-* len(*list*)	讀取列表**長度**
-
-* max(*list*)		讀取列表**最大值**
-	
-* min(*list*)		讀取列表**最小值**
-
-* sorted(iterable, cmp=None, key=None, reverse=False)	回傳列表排序後的值,原列表不受影響
+* sorted(iterable, cmp=None, key=None, reverse=False)	以列表形式回傳序列排序後的值,原序列不受影響
 
 	iterable -- 可疊代對象。
 	cmp -- 比較的函數，這個具有兩個參數，參數的值都是從可疊代對象中取出，此函數必須遵守的規則為，大於則返回1，小於則返回-1，等於則返回0。
