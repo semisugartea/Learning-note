@@ -3,6 +3,18 @@
 * 分為True和False
 	
 * 布林運算:and or not
+
+	優先序:not>and>or
+	
+	>>> not True and False					#not>and
+	False
+	>>> not (True and False)
+	True
+
+	>>> True or False and False				#and>or
+	True
+	>>> (True or False) and False
+	False
 	
 * 除了字面常數 True 及 False 外，數字 0 、 0.0 、空字串及空的資料結構也表示邏輯上的 False，
 	
