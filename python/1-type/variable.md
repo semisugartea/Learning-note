@@ -18,16 +18,24 @@
 	>>> a
 	(1, 2)
 
-	
 	* 物件的值可以是可變的 (mutable) ，或是不可變的 (immutable) ，通常這是說複合資料型態 (compound data type) 的元素 (element) 是否可以替換
+	
 不可變	|Number、String、Tuple
 ----	|----
 可變	|List、Dictionary、Set
 	
-	* 對於同一變數，可以重新指派物件。當物件不再使用時，此時直譯器會自動垃圾收集 (garbage collection) ，釋放記憶體空間。
+	* var2=var1的問題
 	
-	* del
-	使用del可消除變數
+		* 當var1指向的物件是可變的時,若var1發生改變,則var2也會變
+		
+		* 當var1指向的物件是不可變的時,若指派其他物件給var1或利用方法改變var1時,則var1的位址會變,var2不會有任何變化
+	
+	* 對於同一變數，可以重新指派物件。當物件不再使用時，此時直譯器會自動垃圾收集 (garbage collection) ，釋放記憶體空間。
+
+# 相關運算子函數
+	
+	* del var 或 del(var)		消除變數
+	
 	>>> foo = "a string"
 	>>> foo
 	'a string'
@@ -35,12 +43,23 @@
 	>>> foo
 	NameError: name 'foo' is not defined
 
-	* id()
-	使用id()可得目標物件的內存位址
+	* id(var)					獲得目標物件的記憶位址
+
 	>>> a = 'hello'
 	>>> id(a)
 	7696578374880
 
+	* var1 is var2				判斷var1和var2是否指向同一位址
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
