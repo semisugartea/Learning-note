@@ -55,7 +55,8 @@
 * 格式化輸出
 
 	print('string' % (obj1,obj2,...))
-	當字串包含以下形式時,會將對應的物件轉型後輸出
+	
+	當字串包含特殊字元時,會將對應的物件轉型後輸出
 
 字元		|效果									
 ----		|----  
@@ -75,29 +76,3 @@
 %r			|String (converts any python object using repr()).
 %s			|String (converts any python object using str()).
 %%			|No argument is converted, results in a "%" character in the result.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
