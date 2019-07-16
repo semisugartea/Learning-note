@@ -3,7 +3,9 @@
 	for迴圈用於遍歷序列的每一個元素,語法形式為:
 	
 	for iterating_var in sequence:
-		statements(s)
+		statement(s)
+
+# 使用方式
 	
 * 與range()的使用
 
@@ -60,13 +62,15 @@
 
 	在for迴圈中,執行到關鍵字*continue*時,會直接跳至下一個元素;執行到關鍵字*break*時,會中斷迴圈進行
 
-	>>> for i in range(1,10):
-	...     if i == 3:
-	...             continue
-	...     elif i ==5:
-	...             break
-	...     print(i)
-	...
+	輸入:
+	for i in range(1,10):
+		if i == 3:
+			continue
+		elif i == 5:
+			break
+		print(i)
+
+	輸出:
 	1
 	2
 	4
