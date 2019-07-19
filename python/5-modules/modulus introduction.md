@@ -61,7 +61,29 @@
 	>>> import test
 	other
 
-# dir函數
+# dir
+
+	* 在import模組後,可利用dir(*模組名*)查看該模組的所有變數
+
+	>>> import math
+	>>> dir(math)
+	['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+
+	若不輸入*模組名*,則會顯示當前所有變數和模組名
+
+	>>> dir()
+	['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'math']
+
+	使用del可去除模組
+
+	>>> del math
+	>>> dir()
+	['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'a']
+
+
+
+
+
 
 
 
