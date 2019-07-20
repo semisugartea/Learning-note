@@ -1,54 +1,45 @@
-# �s�X
+# 編碼
 
-	�򥻤W�O�HUTF-8�s�X,�Ҧ��r�곣�O�Hunicode���s�X
+- 基本上是以UTF-8編碼，所有字串都是以unicode為編碼
 
-# ���� comment
-	�ϥ�#�ӵ���
-	�i���
+# 註解 comment
+- 使用#來註解
+- 可跨行
 
-# ���ɦr�Ŧ� DocStrings
-	�@��T�ӳ�޸�'''�Τ@��T�����޸�"""
-	�i���
-	�Ω��Ƥ�,�i�I�s�X
+# 文檔字符串 DocStrings
+- 	一對三個單引號'''或一對三個雙引號"""
+- 	可跨行
+- 	用於函數中，可呼叫出
 
-# ����r keyword
+# 關鍵字 keyword
 
-|����   | ����r  |
-| ------------ | ------------ |
-|�`��   |False None True   |
-|�B��l   |and del in is lambda not or  |
-|²�泯�z   |as assert break continue from global import nonlocal pass raise return yield   |
-|�ƦX���z   |else elif except finally for if try while with   |
-|�w�q   |class def   |
+種類		| 關鍵字  
+----		|----
+常數		|False None True   
+運算子		|and del in is lambda not or  
+簡單陳述		|as assert break continue from global import nonlocal pass raise return yield
+複合陳述		|else elif except finally for if try while with   
+定義		|class def   
 
-# �ѧO�r identifier
+# 識別字 identifier
 
-	�Ψ��ѧO�S������,�Ҧp���O(class),���(function),�ܼ�(variable)��
+- 用來識別特殊物件，例如類別(class)、函數(function)、變數(variable)等
+- 命名規則：
 
-1.  �Ѧr���]A-Z,a-z�^�B�Ʀr�]0-9�^�B**��@**�ӤU���u�u_�v�զ��A�åB���r�Ť���O�Ʀr�A���i�H�O�r���Ϊ̤U���u�C
+	1.  由字母（A-Z,a-z）、數字（0-9）、**單一**個下劃線（_）組成，並且首字符不能是數字，但可以是字母或者下劃線。
+	2.	第一個字元不可為數字
+	3.	不能把關鍵字作為識別字
+	4.	在識別字中不可有特殊符號，例如!、@、#、$、%
+	5.	識別字長度不限
 
-2.	�Ĥ@�Ӧr�����i���Ʀr
+# 縮排 indentation
 
-3.	���������r�@���ѧO�r
+- 	縮排的空格數是可變的，但同一代碼區的空格數必須相同，否則可能導致IndentationError
 
-4.	�b�ѧO�r�����i���S���Ÿ��Ҧp!, @, #, $, %
+# 多行語句
 
-5.	�ѧO�r���פ���
+- 	Python通常是一行寫一條詞句，可利用反斜線\來實現多行語句
 
-# �Y�� indentation
+#  同一行顯示多條詞句
 
-	�Y�ƪ��Ů�ƬO�i�ܪ�,���P�@�N�X�Ϫ��Ů�ƥ����ۦP,�_�h�i��ɭPIndentationError
-
-# �h��y�y
-
-	Python�q�`�O�@��g�@�����y, �i�Q�Τϱ׽u\�ӹ�{�h��y�y
-
-#  �P�@����ܦh�����y
-
-	�i�Q�Τ���;���j�y�y�H�b�P�@����ܦh��y�y,
-
-
-
-
-
-
+- 	可利用分號(;)分隔語句以在同一行顯示多行語句
