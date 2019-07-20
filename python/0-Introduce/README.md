@@ -1,2 +1,1 @@
-# Reference:
-[程式語言教學誌](https://kaiching.org/pydoing/python.html)
+基本介紹Python常用名詞
