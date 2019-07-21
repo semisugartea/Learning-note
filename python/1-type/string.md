@@ -34,7 +34,9 @@
 			#'.'為一個字元
 
 * in
+
 	使用in可確認字元是否在字串中
+	
 		>>> 'he' in 'hello'
 		True
 
@@ -44,44 +46,44 @@
 
 * *string*.format(*object*)			使用'{*index*}'.format(*object*)的形式可將物件填入字串中,index代表format()中*object*的順序,沒有寫則會依默認順序填入
 	
-	>>>msg = "Numbers: {0} {1} {2}". format(4, 5, 6)
-	>>>msg
-	'Numbers: 4 5 6'
+		>>>msg = "Numbers: {0} {1} {2}". format(4, 5, 6)
+		>>>msg
+		'Numbers: 4 5 6'
 
 	index可為指定參數(argument)
 	
-	>>>a = "{x}, {y}".format(x=5, y=12)
-	>>>a
-	5, 12
+		>>>a = "{x}, {y}".format(x=5, y=12)
+		>>>a
+		5, 12
 
 * *string*.replace(str1,str2)		回傳將str1替換成str2後的字串
 
-	>>> "Hello ME".replace("ME", "world"))
-	"Hello world"
+		>>> "Hello ME".replace("ME", "world"))
+		"Hello world"
 
 * *string*.startswith(str)			判斷目標字串是否從str開始,若是則回傳True,否則回傳False
 
-	>>> "This is a sentence.".startswith("This")
-	True
+		>>> "This is a sentence.".startswith("This")
+		True
 
 * *string*.endswith(str)			判斷目標字串是否以str結尾,若是則回傳True,否則回傳False
 
-	>>> "This is a sentence.".endswith("sentence.")
-	True
+		>>> "This is a sentence.".endswith("sentence.")
+		True
 
 * *string*.upper()					回傳將目標字串的字皆轉成大寫後的字串
 
-	>>> "This is a sentence.".upper())
-	"THIS IS A SENTENCE."
+		>>> "This is a sentence.".upper())
+		"THIS IS A SENTENCE."
 
 * *string*.lower()					回傳將目標字串的字皆轉成小寫後的字串
 
-	>>> "AN ALL CAPS SENTENCE".lower()
-	"an all caps sentence"
+		>>> "AN ALL CAPS SENTENCE".lower()
+		"an all caps sentence"
 
 
 **與列表相關的方法**
 
 * *string*.split(*["element"]*)		字串轉列表 ,將字串依輸入元素分割
 
-* 'element'.join(list)				列表轉字串,以輸入元素分隔列表的元素
+* 'element'.join(list)			列表轉字串,以輸入元素分隔列表的元素
