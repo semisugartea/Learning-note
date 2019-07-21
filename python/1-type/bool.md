@@ -1,23 +1,23 @@
-## ¯u°²­È bool
+## çœŸå‡å€¼ bool
 
-* ¤À¬°True©MFalse
+* åˆ†ç‚ºTrueå’ŒFalse
 	
-* ¥¬ªL¹Bºâ:and or not
+* å¸ƒæž—é‹ç®—:and or not
 
-	Àu¥ý§Ç:not>and>or
+* å„ªå…ˆåº:not>and>or
 	
-	>>> not True and False					#not>and
-	False
-	>>> not (True and False)
-	True
+		>>> not True and False					#not>and
+		False
+		>>> not (True and False)
+		True
 
-	>>> True or False and False				#and>or
-	True
-	>>> (True or False) and False
-	False
+		>>> True or False and False				#and>or
+		True
+		>>> (True or False) and False
+		False
+
+* é™¤äº†å­—é¢å¸¸æ•¸ True åŠ False å¤–ï¼Œæ•¸å­— 0 ã€ 0.0 ã€ç©ºå­—ä¸²åŠç©ºçš„è³‡æ–™çµæ§‹ä¹Ÿè¡¨ç¤ºé‚è¼¯ä¸Šçš„ Falseï¼Œ
 	
-* °£¤F¦r­±±`¼Æ True ¤Î False ¥~¡A¼Æ¦r 0 ¡B 0.0 ¡BªÅ¦r¦ê¤ÎªÅªº¸ê®Æµ²ºc¤]ªí¥ÜÅÞ¿è¤Wªº False¡A
+* åä¹‹éž 0 ã€éž 0.0 ã€è‡³å°‘ä¸€å€‹å…ƒç´ çš„å­—ä¸² (string) åŠä¸²åˆ— (list) éƒ½è¡¨ç¤ºé‚è¼¯ä¸Šçš„ True
 	
-* ¤Ï¤§«D 0 ¡B«D 0.0 ¡B¦Ü¤Ö¤@­Ó¤¸¯Àªº¦r¦ê (string) ¤Î¦ê¦C (list) ³£ªí¥ÜÅÞ¿è¤Wªº True
-	
-* ¯u°²­È¥i»P¼Æ¦r­pºâ,TrueÀq»{¬°1,FalseÀq»{¬°0
+* çœŸå‡å€¼å¯èˆ‡æ•¸å­—è¨ˆç®—,Trueé»˜èªç‚º1,Falseé»˜èªç‚º0
