@@ -1,64 +1,66 @@
-# ¿é¤J
+# è¼¸å…¥
 
-	* ¨Ï¥Îinput()¥i¥H¿é¤J
-	>>> input("Enter something please: ")
-	Enter something please: This is what\nthe user enters!
-	'This is what\\nthe user enters!'
+* ä½¿ç”¨input()å¯ä»¥è¼¸å…¥
 
-# ¿é¥X-print()»Pª½Ä¶¾¹ªº®t²§
+		>>> input("Enter something please: ")
+		Enter something please: This is what\nthe user enters!
+		'This is what\\nthe user enters!'
 
-¨Ï¥Îprint()©Îª½Ä¶¾¹¥i¥HÅã¥Üª«¥ó¤º®e,¦ı¦³®t²§
+# è¼¸å‡º-print()èˆ‡ç›´è­¯å™¨çš„å·®ç•°
+
+ä½¿ç”¨print()æˆ–ç›´è­¯å™¨å¯ä»¥é¡¯ç¤ºç‰©ä»¶å…§å®¹,ä½†æœ‰å·®ç•°
 	
-	* ª½Ä¶¾¹¤Wª½±µ¿é¤J¦r¦ê·|Åã¥Ü¤Ş¸¹,print()¤º¿é¤J¦r¦ê¤£Åã¥Ü¤Ş¸¹
+* ç›´è­¯å™¨ä¸Šç›´æ¥è¼¸å…¥å­—ä¸²æœƒé¡¯ç¤ºå¼•è™Ÿ,print()å…§è¼¸å…¥å­—ä¸²ä¸é¡¯ç¤ºå¼•è™Ÿ
 	
-	>>> 'apple'
-	'apple'
-	>>> print('apple')
-	apple
+		>>> 'apple'
+		'apple'
+		>>> print('apple')
+		apple
 
 	
-	* ª½Ä¶¾¹¤W¥H³r¸¹°Ï¹j¤¸¯À·|§Î¦¨¤¸²Õ, print()¥H³r¸¹°Ï¹j¤¸¯À·|ª½±µÅã¥Ü¤º®e
+* ç›´è­¯å™¨ä¸Šä»¥é€—è™Ÿå€éš”å…ƒç´ æœƒå½¢æˆå…ƒçµ„, print()ä»¥é€—è™Ÿå€éš”å…ƒç´ æœƒç›´æ¥é¡¯ç¤ºå…§å®¹
 
-	>>> str1='apple'
-	>>> 'str1:',str1
-	('str1:', 'apple')
-	>>> print('str1:',str1)
-	str1: apple
+		>>> str1='apple'
+		>>> 'str1:',str1
+		('str1:', 'apple')
+		>>> print('str1:',str1)
+		str1: apple
 	
-	* print()·|¦³¸õ²æ§Ç¦Cªº®ÄªG, ª½Ä¶¾¹«h§_
+* print()æœƒæœ‰è·³è„«åºåˆ—çš„æ•ˆæœ, ç›´è­¯å™¨å‰‡å¦
 		
-|¸õ²æ§Ç¦C¡@¡@ |®ÄªG									|
+|è·³è„«åºåˆ—ã€€ã€€ |æ•ˆæœ									|
 |----		|----  |
-|¡@\a ¡@¡@¡@¡@|Äµ¥Ü­µ(Alert bell)					|
-|¡@\b ¡@¡@¡@¡@|­Ë°h¤@®æ(Backspace)					|
-|¡@\n ¡@¡@¡@¡@|´«¦æ(New line)						|
-|¡@\r ¡@¡@¡@¡@|¦^Âk¸Ó¦æ°_©lÂI(Carriage return)		|
-|¡@\t ¡@¡@¡@¡@|¤ô¥­¸õ®æ(Tab¡A¬Û·í©ó«öÁä½LªºTabÁä)	|
-|¡@\v ¡@¡@¡@¡@|««ª½¸õ®æ(Vertical tab)				|
-|¡@\\ ¡@¡@¡@¡@|¦L¥X¤Ï±×½u(Backslash)				|
-|¡@\' ¡@¡@¡@¡@|¦L¥X³æ¤Ş¸¹(Single quote)				|
-|¡@\" ¡@¡@¡@¡@|¦L¥XÂù¤Ş¸¹(Double quote)				|
+|ã€€\a ã€€ã€€ã€€ã€€|è­¦ç¤ºéŸ³(Alert bell)					|
+|ã€€\b ã€€ã€€ã€€ã€€|å€’é€€ä¸€æ ¼(Backspace)					|
+|ã€€\n ã€€ã€€ã€€ã€€|æ›è¡Œ(New line)						|
+|ã€€\r ã€€ã€€ã€€ã€€|å›æ­¸è©²è¡Œèµ·å§‹é»(Carriage return)		|
+|ã€€\t ã€€ã€€ã€€ã€€|æ°´å¹³è·³æ ¼(Tabï¼Œç›¸ç•¶æ–¼æŒ‰éµç›¤çš„Tabéµ)	|
+|ã€€\v ã€€ã€€ã€€ã€€|å‚ç›´è·³æ ¼(Vertical tab)				|
+|ã€€\\ ã€€ã€€ã€€ã€€|å°å‡ºåæ–œç·š(Backslash)				|
+|ã€€\' ã€€ã€€ã€€ã€€|å°å‡ºå–®å¼•è™Ÿ(Single quote)				|
+|ã€€\" ã€€ã€€ã€€ã€€|å°å‡ºé›™å¼•è™Ÿ(Double quote)				|
 
-	* ­Y¤£­n²£¥Í®ÄªG¡A«h¶·¦b¦r¦ê«e¥[r
-	>>> print(r'Ru\noob')
-	Ru\noob
+* è‹¥ä¸è¦ç”¢ç”Ÿæ•ˆæœï¼Œå‰‡é ˆåœ¨å­—ä¸²å‰åŠ r
 
-# print()ªº¶i¶¥¥Îªk
+		>>> print(r'Ru\noob')
+		Ru\noob
+
+# print()çš„é€²éšç”¨æ³•
 
 * print(*objects, sep=' ', end='\n', file=sys.stdout)
 
-	objects	:ª«¥ó,¥i¥H¼Æ­Ó
-	sep		:ª«¥óªº¤À¹jª«,Àq»{¬OªÅ®æ
-	end		:µ²§À,Àq»{¬O´«¦æ¦r¤¸\n
-	file	:­n¼g¤Jªº¹ï¶H
+	objects	:ç‰©ä»¶,å¯ä»¥æ•¸å€‹
+	sep		:ç‰©ä»¶çš„åˆ†éš”ç‰©,é»˜èªæ˜¯ç©ºæ ¼
+	end		:çµå°¾,é»˜èªæ˜¯æ›è¡Œå­—å…ƒ\n
+	file	:è¦å¯«å…¥çš„å°è±¡
 
-* ®æ¦¡¤Æ¿é¥X
+* æ ¼å¼åŒ–è¼¸å‡º
 
 	print('string' % (obj1,obj2,...))
 	
-	·í¦r¦ê¥]§t¯S®í¦r¤¸®É,·|±N¹ïÀ³ªºª«¥óÂà«¬«á¿é¥X
+	ç•¶å­—ä¸²åŒ…å«ç‰¹æ®Šå­—å…ƒæ™‚,æœƒå°‡å°æ‡‰çš„ç‰©ä»¶è½‰å‹å¾Œè¼¸å‡º
 
-¦r¤¸		|®ÄªG									
+å­—å…ƒ		|æ•ˆæœ									
 ----		|----  
 %d			|Signed integer decimal.
 %i			|Signed integer decimal.
