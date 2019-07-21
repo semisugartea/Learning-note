@@ -6,12 +6,12 @@
 
 * 優先序:not>and>or
 	
-		>>> not True and False					#not>and
+		>>> not True and False		#not>and
 		False
 		>>> not (True and False)
 		True
 
-		>>> True or False and False				#and>or
+		>>> True or False and False		#and>or
 		True
 		>>> (True or False) and False
 		False
