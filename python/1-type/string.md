@@ -30,18 +30,21 @@
 * 字串可用索引數(index)來顯示第幾個字元[*index*],第1個字元以[0]表示
 
 * 可用[::]分割(slice)字串,其中含意為[起始:終點:步數]
+
 			#[:::]不成立
 			#'.'為一個字元
+
+* 負數為倒著算
+
+# 關鍵字運算子 keyword operator
 
 * in
 
 	使用in可確認字元是否在字串中
 	
 		>>> 'he' in 'hello'
-		True
-
-* 負數為倒著算
-
+		True	
+		
 # 字串相關函數或方法
 
 * *string*.format(*object*)			使用'{*index*}'.format(*object*)的形式可將物件填入字串中,index代表format()中*object*的順序,沒有寫則會依默認順序填入
