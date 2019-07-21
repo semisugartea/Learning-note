@@ -4,16 +4,21 @@
 * 命名規則如同識別字 (identifier)
 	
 * 指派上可以單一指派或多重指派
+
 		>>> x = 7		#單指派
 		>>> a, b = 1, 2	#多指派
 	
 * 允許同時指派
+
 		>>> a = b = c = 1
+		
 * 當指派的變數多餘指派的物件,會導致TypeError
+
 		>>> a, b = 1
 		TypeError: 'int' object is not iterable
 
 * 當指派的變數多餘指派的物件,會形成元組(tuple)
+
 		>>> a = 1, 2
 		>>> a
 		(1, 2)
