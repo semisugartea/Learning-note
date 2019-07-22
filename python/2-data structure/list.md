@@ -1,207 +1,208 @@
-# ¦Cªí(list)°ò¥»¤¶²Ğ 
+# åˆ—è¡¨(list)åŸºæœ¬ä»‹ç´¹ 
 
-* ¥H¤è¬A¸¹[]ªí¥Ü, ¨Ã¨Ï¥Î³r¸¹,°Ï¹j
+* ä»¥æ–¹æ‹¬è™Ÿ[]è¡¨ç¤º, ä¸¦ä½¿ç”¨é€—è™Ÿ,å€éš”
 
-	>>> words = ["Hello", "world", "!"]
-	>>> list1 = [ 123, "abc", True]			#¥i¦P®É¥]§t¤£¦P«¬ºA
+		>>> words = ["Hello", "world", "!"]
+		>>> list1 = [ 123, "abc", True]			#å¯åŒæ™‚åŒ…å«ä¸åŒå‹æ…‹
 
-* ¤è¬A¸¹¤¤¨S¦³¥ô¦ó¤¸¯Àªº¦ê¦CºÙ¬°ªÅ¦Cªí(empty list)
+* æ–¹æ‹¬è™Ÿä¸­æ²’æœ‰ä»»ä½•å…ƒç´ çš„ä¸²åˆ—ç¨±ç‚ºç©ºåˆ—è¡¨(empty list)
 
-* »P¦r¦ê¬Û¦ü,¦Cªí¥i¨Ï¥Î¯Á¤Ş¼Æ(index)¶Ç»¼¨ä¤¤ªº¤¸¯À
+* èˆ‡å­—ä¸²ç›¸ä¼¼,åˆ—è¡¨å¯ä½¿ç”¨ç´¢å¼•æ•¸(index)å‚³éå…¶ä¸­çš„å…ƒç´ 
 
-	>>> print(words[0])
-	Hello
-	>>> print(words[0][0])
-	H
+		>>> print(words[0])
+		Hello
+		>>> print(words[0][0])
+		H
 
-* ¥i§Î¦¨±_ª¬µ²ºc
+* å¯å½¢æˆå·¢ç‹€çµæ§‹
 
-	>>>number = 3
-	>>>things = ["string", 0, [1, 2, number], 4.56]
-	>>>print(things[2])
-	[1, 2, 3]
-	>>>print(things[2][2])
-	3
+		>>>number = 3
+		>>>things = ["string", 0, [1, 2, number], 4.56]
+		>>>print(things[2])
+		[1, 2, 3]
+		>>>print(things[2][2])
+		3
 
-# »P¦r¦ê¹ï¤ñ
+# èˆ‡å­—ä¸²å°æ¯”
 
-* »P¦r¦ê¬Û¦ü,¦Cªí¥i¬Û¥[
+* èˆ‡å­—ä¸²ç›¸ä¼¼,åˆ—è¡¨å¯ç›¸åŠ 
 
-	>>> str = words + list1
-	>>> str
-	['Hello', 'world', '!', 123, 'abc', True]
+		>>> str = words + list1
+		>>> str
+		['Hello', 'world', '!', 123, 'abc', True]
 
-* »P¦r¦ê¬Û¦ü,¦Cªí¥i§Q¥Î­¼¥H¾ã¼Æ¨Ó­«½Æ
+* èˆ‡å­—ä¸²ç›¸ä¼¼,åˆ—è¡¨å¯åˆ©ç”¨ä¹˜ä»¥æ•´æ•¸ä¾†é‡è¤‡
 
-	>>> str2 = words*3
-	>>> str2
-	['Hello', 'world', '!', 'Hello', 'world', '!', 'Hello', 'world', '!']
+		>>> str2 = words*3
+		>>> str2
+		['Hello', 'world', '!', 'Hello', 'world', '!', 'Hello', 'world', '!']
 	
-* »P¦r¦ê¬Û¦ü,¦Cªí¥i¤À³Î(slice), ¦P¼Ë¬O[°_©l:²×ÂI:¨B¼Æ]
+* èˆ‡å­—ä¸²ç›¸ä¼¼,åˆ—è¡¨å¯åˆ†å‰²(slice), åŒæ¨£æ˜¯[èµ·å§‹:çµ‚é»:æ­¥æ•¸]
 
-	>>>squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-	>>>squares[2:6]
-	[4, 9, 16, 25]
+		>>>squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+		>>>squares[2:6]
+		[4, 9, 16, 25]
 
-* »P¦r¦ê¤£¦Pªº¬O,¦Cªí¬O¥iÅÜªº(mutable)
+* èˆ‡å­—ä¸²ä¸åŒçš„æ˜¯,åˆ—è¡¨æ˜¯å¯è®Šçš„(mutable)
 
-	>>> str = 'apple'
-	>>> str[0] = 'b'
-	TypeError: 'str' object does not support item assignment
+		>>> str = 'apple'
+		>>> str[0] = 'b'
+		TypeError: 'str' object does not support item assignment
+
+		>>> list = ['apple', 'banana', 'cat']
+		>>> list[2] = 'dog'
+		>>> list
+		['apple', 'banana', 'dog']
+
+
+# é—œéµå­—é‹ç®—
+
+* in	ç¢ºèªå…ƒç´ æ˜¯å¦åœ¨åˆ—è¡¨ä¸­
+
+		>>>words = ["spam", "egg", "spam", "sausage"]
+		>>>"spam" in words
+		True
+		>>>"egg" in words
+		True
+		>>>"tomato" in words
+		False
+
+* not in	ç¢ºèªå…ƒç´ æ˜¯å¦ä¸åœ¨åˆ—è¡¨ä¸­
+
+		>>>nums = [1, 2, 3]
+		>>>4 not in nums
+		True
+		>>>3 not in nums
+		False
+
+* del list[[èµ·å§‹:]çµ‚é»[:æ­¥æ•¸]]		æ¶ˆé™¤å…¶ä¸­çš„å…ƒç´ ,åŒsliceé‹ç®—åŸå‰‡
+
+		>>> words = ["Hello", "world", "!"]
+		>>> del words[1]
+		>>> words
+		['Hello', '!']
+
+# åˆ©ç”¨å‡½æ•¸å½¢æˆåˆ—è¡¨
+
+* list(*sequence*) å°‡è¼¸å…¥çš„åºåˆ—(sequence)è½‰ç‚ºåˆ—è¡¨, åºåˆ—å¯ä»¥æ˜¯å…ƒçµ„æˆ–å­—ä¸² 
+
+		>>> tup = (123, 'apple', 'banana', 'cat')
+		>>> list(tup)
+		[123, 'apple', 'banana', 'cat']
+
+		>>> str="Hello World"
+		>>> list(str)
+		['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
 	
-	>>> list = ['apple', 'banana', 'cat']
-	>>> list[2] = 'dog'
-	>>> list
-	['apple', 'banana', 'dog']
+* range([start,] stop[[, step]])	å»ºæ§‹æ•¸å­—åºåˆ—,ç•¶æ•¸åˆ°stopæ™‚ç›´æ¥åœæ­¢
 
-
-# ÃöÁä¦r¹Bºâ
-
-* in	½T»{¤¸¯À¬O§_¦b¦Cªí¤¤
-
-	>>>words = ["spam", "egg", "spam", "sausage"]
-	>>>"spam" in words
-	True
-	>>>"egg" in words
-	True
-	>>>"tomato" in words
-	False
-
-* not in	½T»{¤¸¯À¬O§_¤£¦b¦Cªí¤¤
-
-	>>>nums = [1, 2, 3]
-	>>>4 not in nums
-	True
-	>>>3 not in nums
-	False
-
-* del list[[°_©l:]²×ÂI[:¨B¼Æ]]		®ø°£¨ä¤¤ªº¤¸¯À,¦Pslice¹Bºâ­ì«h
-
-	>>> words = ["Hello", "world", "!"]
-	>>> del words[1]
-	>>> words
-	['Hello', '!']
-
-# §Q¥Î¨ç¼Æ§Î¦¨¦Cªí
-
-* list(*sequence*) ±N¿é¤Jªº§Ç¦C(sequence)Âà¬°¦Cªí, §Ç¦C¥i¥H¬O¤¸²Õ©Î¦r¦ê 
-
-	>>> tup = (123, 'apple', 'banana', 'cat')
-	>>> list(tup)
-	[123, 'apple', 'banana', 'cat']
-
-	>>> str="Hello World"
-	>>> list(str)
-	['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+èˆ‡list()åˆç”¨å¯å½¢æˆåˆ—è¡¨
 	
-* range([start,] stop[[, step]])	«Øºc¼Æ¦r§Ç¦C,·í¼Æ¨ìstop®Éª½±µ°±¤î
+		>>> list(range(10))				#åªæœ‰ä¸€å€‹æ•¸æ™‚é»˜èªç‚ºstop, starté»˜èªç‚º0, stepé»˜èªç‚º1
+		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-	»Plist()¦X¥Î¥i§Î¦¨¦Cªí
+		>>> list(range(5,10))			#å…©å€‹æ•¸æ™‚åˆ†åˆ¥é»˜èªç‚ºstart, stop, stepé»˜èªç‚º1
+		[5, 6, 7, 8, 9]
+
+		>>> list(range(5, 20, 2))		#ä¸‰å€‹æ•¸
+		[5, 7, 9, 11, 13, 15, 17, 19]
+
+* åˆ—è¡¨è‹¥å¤ªå¤§æœƒå°è‡´MemoryErroræˆ–OverflowError
+
+		>>>list(range(10**100))
+		OverflowError
+
+**é€²éš**
+
+* åˆ—è¡¨æ¨å°å¼ list comprehension
+
+	* forè¿´åœˆ
+
+	åˆ©ç”¨forè¿´åœˆå¯åœ¨[]å…§å»ºç«‹åˆ—è¡¨
+
+		>>>cubes = [i**3 for i in range(5)]
+		>>>cubes
+		[0, 1, 8, 27, 64]
+
+	* ifé™³è¿°
+
+	åˆ©ç”¨ifé™³è¿°å¯ç¯©é¸å…ƒç´ 
 	
-	>>> list(range(10))				#¥u¦³¤@­Ó¼Æ®ÉÀq»{¬°stop, startÀq»{¬°0, stepÀq»{¬°1
-	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+		>>>evens=[i**2 for i in range(10) if i**2 % 2 == 0]
+		>>>evens
+		[0, 4, 16, 36, 64]
 
-	>>> list(range(5,10))			#¨â­Ó¼Æ®É¤À§OÀq»{¬°start, stop, stepÀq»{¬°1
-	[5, 6, 7, 8, 9]
 
-	>>> list(range(5, 20, 2))		#¤T­Ó¼Æ
-	[5, 7, 9, 11, 13, 15, 17, 19]
+# å­—ä¸²èˆ‡åˆ—è¡¨äº’ç›¸è½‰æ›çš„æ–¹æ³•
 
-	* ¦Cªí­Y¤Ó¤j·|¾É­PMemoryError©ÎOverflowError
-	>>>list(range(10**100))
-	OverflowError
+	æ–¹æ³•(method)æ˜¯æŒ‡å¼•ç”¨é¡åˆ¥classä¸­çš„å‡½æ•¸, åœ¨æ­¤æ˜¯å¼•ç”¨<class 'list'>çš„å‡½æ•¸
 
-**¶i¶¥**
+* *string*.split(*["element"]*)		å­—ä¸²è½‰åˆ—è¡¨ ,å°‡å­—ä¸²ä¾è¼¸å…¥å…ƒç´ åˆ†å‰²
 
-* ¦Cªí±À¾É¦¡ list comprehension
+		>>> str1 = 'hello world app123'
+		>>> str1.split()					#è‹¥æœªå¡«å…¥å…ƒç´ ,å‰‡é»˜èªç‚ºç©ºæ ¼
+		['hello', 'world', 'app123']
+		>>> str1.split(' ')				
+		['hello', 'world', 'app123']
 
-	* for°j°é
+		>>> str2 = 'hello.world.app123'
+		>>> str2.split('.')					#å¡«å…¥å…ƒç´ æœƒè¢«æ¶ˆé™¤
+		['hello', 'world', 'app123']
 
-	§Q¥Îfor°j°é¥i¦b[]¤º«Ø¥ß¦Cªí
+* 'element'.join(list)				åˆ—è¡¨è½‰å­—ä¸²,ä»¥è¼¸å…¥å…ƒç´ åˆ†éš”åˆ—è¡¨çš„å…ƒç´ 
 
-	>>>cubes = [i**3 for i in range(5)]
-	>>>cubes
-	[0, 1, 8, 27, 64]
+		>>> ''.join(['hello','world','app123'])		#è‹¥æœªå¡«å…¥å…ƒç´ ,å‰‡é»˜èªç‚ºç„¡
+		'helloworldapp123'
 
-	* if³¯­z
+		>>> '.'.join(['hello','world','app123'])
+		hello.world.app123'
 
-	§Q¥Îif³¯­z¥i¿z¿ï¤¸¯À
+# ç›¸é—œå‡½æ•¸
+
+* len(*list*)		è®€å–åˆ—è¡¨**å…ƒç´ å€‹æ•¸**
+
+* max(*list*)		è®€å–åˆ—è¡¨ä¸­**æœ€å¤§å€¼**
 	
-	>>>evens=[i**2 for i in range(10) if i**2 % 2 == 0]
-	>>>evens
-	[0, 4, 16, 36, 64]
+* min(*list*)		è®€å–åˆ—è¡¨ä¸­**æœ€å°å€¼**
 
+* sum(*list*)		åˆè¨ˆåˆ—è¡¨ä¸­çš„æ•¸å­—
 
-# ¦r¦ê»P¦Cªí¤¬¬ÛÂà´«ªº¤èªk
+* sorted(iterable, cmp=None, key=None, reverse=False)	ä»¥åˆ—è¡¨å½¢å¼å›å‚³åºåˆ—æ’åºå¾Œçš„å€¼,åŸåºåˆ—ä¸å—å½±éŸ¿
 
-	¤èªk(method)¬O«ü¤Ş¥ÎÃş§Oclass¤¤ªº¨ç¼Æ, ¦b¦¹¬O¤Ş¥Î<class 'list'>ªº¨ç¼Æ
+	iterable -- å¯ç–Šä»£å°è±¡ã€‚
+	cmp -- æ¯”è¼ƒçš„å‡½æ•¸ï¼Œé€™å€‹å…·æœ‰å…©å€‹åƒæ•¸ï¼Œåƒæ•¸çš„å€¼éƒ½æ˜¯å¾å¯ç–Šä»£å°è±¡ä¸­å–å‡ºï¼Œæ­¤å‡½æ•¸å¿…é ˆéµå®ˆçš„è¦å‰‡ç‚ºï¼Œå¤§æ–¼å‰‡è¿”å›1ï¼Œå°æ–¼å‰‡è¿”å›-1ï¼Œç­‰æ–¼å‰‡è¿”å›0ã€‚
+	key -- ä¸»è¦æ˜¯ç”¨ä¾†é€²è¡Œæ¯”è¼ƒçš„å…ƒç´ ï¼Œåªæœ‰ä¸€å€‹åƒæ•¸ï¼Œå…·é«”çš„å‡½æ•¸çš„åƒæ•¸å°±æ˜¯å–è‡ªæ–¼å¯ç–Šä»£å°è±¡ä¸­ï¼ŒæŒ‡å®šå¯ç–Šä»£å°è±¡ä¸­çš„ä¸€å€‹å…ƒç´ ä¾†é€²è¡Œæ’åºã€‚
+	reverse -- æ’åºè¦å‰‡ï¼Œreverse = True é™åº ï¼Œ reverse = False å‡åºï¼ˆé»˜èªï¼‰
 
-* *string*.split(*["element"]*)		¦r¦êÂà¦Cªí ,±N¦r¦ê¨Ì¿é¤J¤¸¯À¤À³Î
+# ç›¸é—œæ–¹æ³•
 
-	>>> str1 = 'hello world app123'
-	>>> str1.split()					#­Y¥¼¶ñ¤J¤¸¯À,«hÀq»{¬°ªÅ®æ
-	['hello', 'world', 'app123']
-	>>> str1.split(' ')				
-	['hello', 'world', 'app123']
+* list.append(obj)	åœ¨åˆ—è¡¨çµå°¾æ·»åŠ æ–°ç‰©ä»¶
 
-	>>> str2 = 'hello.world.app123'
-	>>> str2.split('.')					#¶ñ¤J¤¸¯À·|³Q®ø°£
-	['hello', 'world', 'app123']
+* list.count(obj)	çµ±è¨ˆæŸå€‹ç‰©ä»¶åœ¨åˆ—è¡¨çš„å‡ºç¾æ¬¡æ•¸
 
-* 'element'.join(list)				¦CªíÂà¦r¦ê,¥H¿é¤J¤¸¯À¤À¹j¦Cªíªº¤¸¯À
+* list.extend(seq)	åœ¨åˆ—è¡¨çµå°¾æ·»åŠ æ–°åˆ—è¡¨
 
-	>>> ''.join(['hello','world','app123'])		#­Y¥¼¶ñ¤J¤¸¯À,«hÀq»{¬°µL
-	'helloworldapp123'
+	èˆ‡appendçš„ä¸åŒ:appendæœƒå°‡æ–°åˆ—è¡¨è¦–åšä¸€å€‹å…ƒç´ åŠ å…¥ç›®æ¨™åˆ—è¡¨,è€Œextendæœƒå°‡æ–°åˆ—è¡¨ä¸­çš„å…ƒç´ æŠ½å‡ºä¸¦åŠ å…¥ç›®æ¨™åˆ—è¡¨
 
-	>>> '.'.join(['hello','world','app123'])
-	hello.world.app123'
+* list.index(obj)	æ‰¾å‡ºç›®æ¨™ç‰©ä»¶çš„ç´¢å¼•æ•¸
 
-# ¬ÛÃö¨ç¼Æ
+* list.insert(index, obj)	åœ¨ç´¢å¼•æ•¸çš„ä½ç½®æ’å…¥ç‰©ä»¶
 
-* len(*list*)		Åª¨ú¦Cªí**¤¸¯À­Ó¼Æ**
+* list.pop(obj = list[-1])	ç§»é™¤åˆ—è¡¨ä¸­çš„ä¸€å€‹ç‰©ä»¶(é»˜èªç‚ºæœ€å¾Œä¸€å€‹),ä¸¦å›å‚³è©²ç‰©ä»¶å…§å®¹
 
-* max(*list*)		Åª¨ú¦Cªí¤¤**³Ì¤j­È**
-	
-* min(*list*)		Åª¨ú¦Cªí¤¤**³Ì¤p­È**
+* list.remove(obj)	ç§»é™¤åˆ—è¡¨ä¸­çš„ç¬¬ä¸€å€‹ç¬¦åˆçš„ç‰©ä»¶
 
-* sum(*list*)		¦X­p¦Cªí¤¤ªº¼Æ¦r
+* list.reverse()	å°‡åˆ—è¡¨æ’åˆ—åå‘
 
-* sorted(iterable, cmp=None, key=None, reverse=False)	¥H¦Cªí§Î¦¡¦^¶Ç§Ç¦C±Æ§Ç«áªº­È,­ì§Ç¦C¤£¨ü¼vÅT
+* list.sort(cmp=None, key=None, reverse=False)		å°‡åŸåˆ—è¡¨æ’åº
 
-	iterable -- ¥iÅ|¥N¹ï¶H¡C
-	cmp -- ¤ñ¸ûªº¨ç¼Æ¡A³o­Ó¨ã¦³¨â­Ó°Ñ¼Æ¡A°Ñ¼Æªº­È³£¬O±q¥iÅ|¥N¹ï¶H¤¤¨ú¥X¡A¦¹¨ç¼Æ¥²¶·¿í¦uªº³W«h¬°¡A¤j©ó«hªğ¦^1¡A¤p©ó«hªğ¦^-1¡Aµ¥©ó«hªğ¦^0¡C
-	key -- ¥D­n¬O¥Î¨Ó¶i¦æ¤ñ¸ûªº¤¸¯À¡A¥u¦³¤@­Ó°Ñ¼Æ¡A¨ãÅéªº¨ç¼Æªº°Ñ¼Æ´N¬O¨ú¦Û©ó¥iÅ|¥N¹ï¶H¤¤¡A«ü©w¥iÅ|¥N¹ï¶H¤¤ªº¤@­Ó¤¸¯À¨Ó¶i¦æ±Æ§Ç¡C
-	reverse -- ±Æ§Ç³W«h¡Areverse = True ­°§Ç ¡A reverse = False ¤É§Ç¡]Àq»{¡^
+	cmp -- æ¯”è¼ƒçš„å‡½æ•¸ï¼Œé€™å€‹å…·æœ‰å…©å€‹åƒæ•¸ï¼Œåƒæ•¸çš„å€¼éƒ½æ˜¯å¾å¯ç–Šä»£å°è±¡ä¸­å–å‡ºï¼Œæ­¤å‡½æ•¸å¿…é ˆéµå®ˆçš„è¦å‰‡ç‚ºï¼Œå¤§æ–¼å‰‡è¿”å›1ï¼Œå°æ–¼å‰‡è¿”å›-1ï¼Œç­‰æ–¼å‰‡è¿”å›0ã€‚
+	key -- ä¸»è¦æ˜¯ç”¨ä¾†é€²è¡Œæ¯”è¼ƒçš„å…ƒç´ ï¼Œåªæœ‰ä¸€å€‹åƒæ•¸ï¼Œå…·é«”çš„å‡½æ•¸çš„åƒæ•¸å°±æ˜¯å–è‡ªæ–¼å¯ç–Šä»£å°è±¡ä¸­ï¼ŒæŒ‡å®šå¯ç–Šä»£å°è±¡ä¸­çš„ä¸€å€‹å…ƒç´ ä¾†é€²è¡Œæ’åºã€‚
+	reverse -- æ’åºè¦å‰‡ï¼Œreverse = True é™åº ï¼Œ reverse = False å‡åºï¼ˆé»˜èªï¼‰
 
-# ¬ÛÃö¤èªk
+* list.clear()	æ¸…ç©ºåˆ—è¡¨
 
-* list.append(obj)	¦b¦Cªíµ²§À²K¥[·sª«¥ó
-
-* list.count(obj)	²Î­p¬Y­Óª«¥ó¦b¦Cªíªº¥X²{¦¸¼Æ
-
-* list.extend(seq)	¦b¦Cªíµ²§À²K¥[·s¦Cªí
-
-	»Pappendªº¤£¦P:append·|±N·s¦Cªíµø°µ¤@­Ó¤¸¯À¥[¤J¥Ø¼Ğ¦Cªí,¦Óextend·|±N·s¦Cªí¤¤ªº¤¸¯À©â¥X¨Ã¥[¤J¥Ø¼Ğ¦Cªí
-
-* list.index(obj)	§ä¥X¥Ø¼Ğª«¥óªº¯Á¤Ş¼Æ
-
-* list.insert(index, obj)	¦b¯Á¤Ş¼Æªº¦ì¸m´¡¤Jª«¥ó
-
-* list.pop(obj = list[-1])	²¾°£¦Cªí¤¤ªº¤@­Óª«¥ó(Àq»{¬°³Ì«á¤@­Ó),¨Ã¦^¶Ç¸Óª«¥ó¤º®e
-
-* list.remove(obj)	²¾°£¦Cªí¤¤ªº²Ä¤@­Ó²Å¦Xªºª«¥ó
-
-* list.reverse()	±N¦Cªí±Æ¦C¤Ï¦V
-
-* list.sort(cmp=None, key=None, reverse=False)		±N­ì¦Cªí±Æ§Ç
-
-	cmp -- ¤ñ¸ûªº¨ç¼Æ¡A³o­Ó¨ã¦³¨â­Ó°Ñ¼Æ¡A°Ñ¼Æªº­È³£¬O±q¥iÅ|¥N¹ï¶H¤¤¨ú¥X¡A¦¹¨ç¼Æ¥²¶·¿í¦uªº³W«h¬°¡A¤j©ó«hªğ¦^1¡A¤p©ó«hªğ¦^-1¡Aµ¥©ó«hªğ¦^0¡C
-	key -- ¥D­n¬O¥Î¨Ó¶i¦æ¤ñ¸ûªº¤¸¯À¡A¥u¦³¤@­Ó°Ñ¼Æ¡A¨ãÅéªº¨ç¼Æªº°Ñ¼Æ´N¬O¨ú¦Û©ó¥iÅ|¥N¹ï¶H¤¤¡A«ü©w¥iÅ|¥N¹ï¶H¤¤ªº¤@­Ó¤¸¯À¨Ó¶i¦æ±Æ§Ç¡C
-	reverse -- ±Æ§Ç³W«h¡Areverse = True ­°§Ç ¡A reverse = False ¤É§Ç¡]Àq»{¡^
-
-* list.clear()	²MªÅ¦Cªí
-
-* list.copy()	½Æ»s¦Cªí
+* list.copy()	è¤‡è£½åˆ—è¡¨
 
 
 
