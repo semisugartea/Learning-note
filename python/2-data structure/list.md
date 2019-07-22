@@ -96,7 +96,7 @@
 	
 * range([start,] stop[[, step]])	建構數字序列,當數到stop時直接停止
 
-與list()合用可形成列表
+	與list()合用可形成列表
 	
 		>>> list(range(10))				#只有一個數時默認為stop, start默認為0, step默認為1
 		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
