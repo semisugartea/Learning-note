@@ -1,102 +1,102 @@
-# ¦r¨å(dictionary)°ò¥»¤¶²Ğ
+# å­—å…¸(dictionary)åŸºæœ¬ä»‹ç´¹
 
-* ¥Hªá¬A¸¹{}ªí¥Ü, ¨Ã¨Ï¥Î³r¸¹,°Ï¹j¤¸¯À, ¨C¤@­Ó¤¸¯Àªº«¬ºA¬°key:value
-* ¤£¥i§Î¦¨±_ª¬µ²ºc
+* ä»¥èŠ±æ‹¬è™Ÿ{}è¡¨ç¤º, ä¸¦ä½¿ç”¨é€—è™Ÿ,å€éš”å…ƒç´ , æ¯ä¸€å€‹å…ƒç´ çš„å‹æ…‹ç‚ºkey:value
+* ä¸å¯å½¢æˆå·¢ç‹€çµæ§‹
 
-	Áä(key)¤£¥iÅÜ,¦]¦¹¥i¥H¬O¼Æ­È,¦r¦ê,¯u°²­È,¤¸²Õ
-	­È(value)¥i¥H¬O¼Æ­È,¦r¦ê,¯u°²­È,¤¸²Õ,¦Cªí	
-	=>	¤£¥i§Î¦¨±_ª¬µ²ºc
+	éµ(key)ä¸å¯è®Š,å› æ­¤å¯ä»¥æ˜¯æ•¸å€¼,å­—ä¸²,çœŸå‡å€¼,å…ƒçµ„
+	å€¼(value)å¯ä»¥æ˜¯æ•¸å€¼,å­—ä¸²,çœŸå‡å€¼,å…ƒçµ„,åˆ—è¡¨	
+	=>	ä¸å¯å½¢æˆå·¢ç‹€çµæ§‹
 
-	>>> dict1 = {"apple": 24, "banana":61 , "cat": 58}
-	>>> dict2 = {1: 2, '2':'b' , (3,3): ('c','c'), True:False , 5.5:['e',5]}
+		>>> dict1 = {"apple": 24, "banana":61 , "cat": 58}
+		>>> dict2 = {1: 2, '2':'b' , (3,3): ('c','c'), True:False , 5.5:['e',5]}
 
-* ªá¬A¸¹¤¤¨S¦³¥ô¦ó¤¸¯Àªº¦ê¦CºÙ¬°ªÅ¦r¨å(empty dictionary)
+* èŠ±æ‹¬è™Ÿä¸­æ²’æœ‰ä»»ä½•å…ƒç´ çš„ä¸²åˆ—ç¨±ç‚ºç©ºå­—å…¸(empty dictionary)
 
-* §Q¥ÎÁäÅª¨ú¬Û¹ïÀ³ªº­È,Áä¤£¦s¦b·|Åã¥Ü KeyError
+* åˆ©ç”¨éµè®€å–ç›¸å°æ‡‰çš„å€¼,éµä¸å­˜åœ¨æœƒé¡¯ç¤º KeyError
 
-	>>> dict1['apple']
-	24
+		>>> dict1['apple']
+		24
 
-* ¦r¨å¬O¥iÅÜªº, ¥i§Q¥ÎÁä¼W¥[·sªº¤¸¯À©Î­«·s«ü¬£·sªº­È
+* å­—å…¸æ˜¯å¯è®Šçš„, å¯åˆ©ç”¨éµå¢åŠ æ–°çš„å…ƒç´ æˆ–é‡æ–°æŒ‡æ´¾æ–°çš„å€¼
 
-	>>>squares = {1: 1, 2: 4, 3: "error", 4: 16,}
-	>>>squares[8] = 64
-	>>>squares[3] = 9
-	>>>squares
-	{1: 1, 2: 4, 3: 9, 4: 16, 8: 64}
+		>>>squares = {1: 1, 2: 4, 3: "error", 4: 16,}
+		>>>squares[8] = 64
+		>>>squares[3] = 9
+		>>>squares
+		{1: 1, 2: 4, 3: 9, 4: 16, 8: 64}
 	
-* ­Y¥X²{¬Û¦PªºÁä, «h·|¥H«áªÌ¬°·Ç
+* è‹¥å‡ºç¾ç›¸åŒçš„éµ, å‰‡æœƒä»¥å¾Œè€…ç‚ºæº–
 
-* ¦r¨å¤£¥i¬Û¥[©Î­¼¥H¾ã¼Æ
+* å­—å…¸ä¸å¯ç›¸åŠ æˆ–ä¹˜ä»¥æ•´æ•¸
 
-# ÃöÁä¦r¹Bºâ
+# é—œéµå­—é‹ç®—
 
-* in	½T»{¤¸¯À¬O§_¦bÁä¤¤
+* in	ç¢ºèªå…ƒç´ æ˜¯å¦åœ¨éµä¸­
 	
-	nums = {1: "one", 2: "two", 3: "three"}
-	>>> 1 in nums
-	True
-	>>> "three" in nums
-	False
+		nums = {1: "one", 2: "two", 3: "three"}
+		>>> 1 in nums
+		True
+		>>> "three" in nums
+		False
 
-* not in	½T»{¤¸¯À¬O§_¤£¦bÁä¤¤
+* not in	ç¢ºèªå…ƒç´ æ˜¯å¦ä¸åœ¨éµä¸­
 
-	>>> 1 not in nums
-	False
-	>>> 'three' not in nums
-	True
+		>>> 1 not in nums
+		False
+		>>> 'three' not in nums
+		True
 
-* del *dict[key]*						®ø°£¨ä¤¤ªº¤¸¯À
+* del *dict[key]*						æ¶ˆé™¤å…¶ä¸­çš„å…ƒç´ 
 
-# §Q¥Î¨ç¼Æ§Î¦¨¦Cªí
+# åˆ©ç”¨å‡½æ•¸å½¢æˆåˆ—è¡¨
 
-* dict()	±N¿é¤Jªºª«¥óÂà¬°¦r¨å
+* dict()	å°‡è¼¸å…¥çš„ç‰©ä»¶è½‰ç‚ºå­—å…¸
 
-	§Î¦¡¤À¬°¤TºØ:
-	dict(**kwarg)					**kwargs:¯S®í§Î¦¡,¦pkey=value
-	dict(mapping, **kwarg)			mapping	:¬M®g¨ç¼Æ
-	dict(iterable, **kwarg)			iterable:¥iÅ|¥N¹ï¶H
+	å½¢å¼åˆ†ç‚ºä¸‰ç¨®:
+	dict(**kwarg)					**kwargs:ç‰¹æ®Šå½¢å¼,å¦‚key=value
+	dict(mapping, **kwarg)			mapping	:æ˜ å°„å‡½æ•¸
+	dict(iterable, **kwarg)			iterable:å¯ç–Šä»£å°è±¡
 
-	>>> dict(a='one', b='two',c ='three')
-	{'a': 'one', 'b': 'two', 'c': 'three'}
-	>>> dict(zip(['one', 'two', 'three'], [1, 2, 3]))   # ¬M®g¨ç¼Æ
-	{'three': 3, 'two': 2, 'one': 1} 
-	>>> dict([('one', 1), ('two', 2), ('three', 3)])    # Å|¥N¤è¦¡
-	{'three': 3, 'two': 2, 'one': 1}
+		>>> dict(a='one', b='two',c ='three')
+		{'a': 'one', 'b': 'two', 'c': 'three'}
+		>>> dict(zip(['one', 'two', 'three'], [1, 2, 3]))   # æ˜ å°„å‡½æ•¸
+		{'three': 3, 'two': 2, 'one': 1} 
+		>>> dict([('one', 1), ('two', 2), ('three', 3)])    # ç–Šä»£æ–¹å¼
+		{'three': 3, 'two': 2, 'one': 1}
 
-# ¬ÛÃö¨ç¼Æ
+# ç›¸é—œå‡½æ•¸
 
-* len(*dict*)		­pºâ¦r¨å¤¤ªº¤¸¯À­Ó¼Æ
+* len(*dict*)		è¨ˆç®—å­—å…¸ä¸­çš„å…ƒç´ å€‹æ•¸
 
-* max(*dict*)		Åª¨ú¦r¨å¤¤**³Ì¤jÁä*
+* max(*dict*)		è®€å–å­—å…¸ä¸­**æœ€å¤§éµ*
 	
-* min(*dict*)		Åª¨ú¦r¨å¤¤**³Ì¤pÁä**
+* min(*dict*)		è®€å–å­—å…¸ä¸­**æœ€å°éµ**
 
-* sum(*tuple*)		¦X­p¦r¨å¤¤ªºÁä
+* sum(*tuple*)		åˆè¨ˆå­—å…¸ä¸­çš„éµ
 
-# ¬ÛÃö¤èªk
+# ç›¸é—œæ–¹æ³•
 
-* dict.clear()							®ø°£©Ò¦³¤¸¯À
+* dict.clear()							æ¶ˆé™¤æ‰€æœ‰å…ƒç´ 
 
-* dict.copy()							ªí¼h½Æ»s¦r¨å¤º®e	
+* dict.copy()							è¡¨å±¤è¤‡è£½å­—å…¸å…§å®¹	
 
-* dict.fromkeys(seq[, value])			§Q¥Î¿é¤J¦r¨åªºÁä«Ø¥ß·s¦r¨å,¥i³]©w­È,¨ä­ÈÀq»{¬°None
+* dict.fromkeys(seq[, value])			åˆ©ç”¨è¼¸å…¥å­—å…¸çš„éµå»ºç«‹æ–°å­—å…¸,å¯è¨­å®šå€¼,å…¶å€¼é»˜èªç‚ºNone
 
-* dict.items()							±N¦r¨å¤¤ªº¨C¤@­Ó¤¸¯À¦^¶Ç¦¨dict_items([(key1, value1), (key2, value2),...])ªº§Î¦¡
+* dict.items()							å°‡å­—å…¸ä¸­çš„æ¯ä¸€å€‹å…ƒç´ å›å‚³æˆdict_items([(key1, value1), (key2, value2),...])çš„å½¢å¼
 
-* dict.keys()							±N¦r¨å¤¤ªº¨C¤@­ÓÁä¦^¶Ç¦¨dict_keys([key1, key2, ...])ªº§Î¦¡
+* dict.keys()							å°‡å­—å…¸ä¸­çš„æ¯ä¸€å€‹éµå›å‚³æˆdict_keys([key1, key2, ...])çš„å½¢å¼
 
-* dict.values()							±N¦r¨å¤¤ªº¨C¤@­Ó­È¦^¶Ç¦¨dict_values([value1, value2, ...])ªº§Î¦¡
+* dict.values()							å°‡å­—å…¸ä¸­çš„æ¯ä¸€å€‹å€¼å›å‚³æˆdict_values([value1, value2, ...])çš„å½¢å¼
 
-* dict.get(key, default=None)			Åª¨ú¿é¤JÁä¬Û¹ïªº­È,¨S¦³«hÀq»{¬°None,¥i³]©w¨ä¥L¦^¶Ç­È
+* dict.get(key, default=None)			è®€å–è¼¸å…¥éµç›¸å°çš„å€¼,æ²’æœ‰å‰‡é»˜èªç‚ºNone,å¯è¨­å®šå…¶ä»–å›å‚³å€¼
 
-* dict.setdefault(key, default=None)	Åª¨ú¿é¤JÁä¬Û¹ïªº­È,¨S¦³«h´¡¤JÁä,¨ä­ÈÀq»{¬°None,¥i³]©w¨ä¥L­È
+* dict.setdefault(key, default=None)	è®€å–è¼¸å…¥éµç›¸å°çš„å€¼,æ²’æœ‰å‰‡æ’å…¥éµ,å…¶å€¼é»˜èªç‚ºNone,å¯è¨­å®šå…¶ä»–å€¼
 
-* dict.update(dict2)					±Ndict2ªº¤¸¯À¥[¤J¥Ø¼Ğ¦r¨å
+* dict.update(dict2)					å°‡dict2çš„å…ƒç´ åŠ å…¥ç›®æ¨™å­—å…¸
 
-* dict.pop(key[,default])				§R°£Áä¬Û¹ïªº¤¸¯À¨Ã¦^¶Ç¬Û¹ïªº­È,Áä¤£¦s¦b«h¦^¶Çdefault­È,­Ydefault­È¤£³]©w·|¾É­P¦^¶Ç®Éµo¥ÍKeyError
+* dict.pop(key[,default])				åˆªé™¤éµç›¸å°çš„å…ƒç´ ä¸¦å›å‚³ç›¸å°çš„å€¼,éµä¸å­˜åœ¨å‰‡å›å‚³defaultå€¼,è‹¥defaultå€¼ä¸è¨­å®šæœƒå°è‡´å›å‚³æ™‚ç™¼ç”ŸKeyError
 
-* dict.popitem()						ÀH¾÷§R°£¦r¨å¤¤ªº¨ä¤¤¤@­Ó¤¸¯À,¨Ã¥H(key, value)ªº§Î¦¡¦^¶Ç¸Ó¤¸¯À
+* dict.popitem()						éš¨æ©Ÿåˆªé™¤å­—å…¸ä¸­çš„å…¶ä¸­ä¸€å€‹å…ƒç´ ,ä¸¦ä»¥(key, value)çš„å½¢å¼å›å‚³è©²å…ƒç´ 
 
 
 
