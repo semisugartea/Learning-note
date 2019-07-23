@@ -1,24 +1,24 @@
-# °ò¥»¤¶²Ð
+# åŸºæœ¬ä»‹ç´¹
 
-	assert¥Î©ó§PÂ_±ø¥ó¦¡ªº¯u°²,­Y±ø¥ó¦¡¬°¯u«h¸õ¹L,§_«hµo°_AssertionError,¨ä»yªk¬°
+assertç”¨æ–¼åˆ¤æ–·æ¢ä»¶å¼çš„çœŸå‡,è‹¥æ¢ä»¶å¼ç‚ºçœŸå‰‡è·³éŽ,å¦å‰‡ç™¼èµ·AssertionError,å…¶èªžæ³•ç‚º
 	
-	assert condition[, arguments]
+		assert condition[, arguments]
 	
-	¨äµ¥»ù¬°
-	
-	if not expression:
-		raise AssertionError(arguments)
+å…¶ç­‰åƒ¹ç‚º
 
-¨Ò¤l1:
+		if not expression:
+			raise AssertionError(arguments)
 
-	¿é¤J:
+ä¾‹å­1:
+
+	è¼¸å…¥:
 	print(1)
 	assert 1 + 1 == 2
 	print(2)
 	assert 2 + 2 == 3
 	print(3)
 
-	¿é¥X:
+	è¼¸å‡º:
 	1
 	2
 	Traceback (most recent call last):
@@ -26,14 +26,14 @@
 		assert 2 + 2 == 3
 	AssertionError
 
-¨Ò¤l2:
+ä¾‹å­2:
 
-	¿é¤J:
+	è¼¸å…¥:
 	a, b = 1, 2
 	assert a > b, 'a<b'
 	print(a,'&',b)
 
-	¿é¥X:
+	è¼¸å‡º:
 	Traceback (most recent call last):
 	  File "python.py", line 2, in <module>
 		assert a > b, 'a<b'
