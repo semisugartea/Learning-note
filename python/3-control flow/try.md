@@ -1,39 +1,39 @@
 # try/except
 
-	¥i§Q¥Îtry/except»y¥y³B²z´ú¸Õ¨Ã³B²z¨Ò¥~,»yªk§Î¦¡¬°:
+å¯åˆ©ç”¨try/exceptèªå¥è™•ç†æ¸¬è©¦ä¸¦è™•ç†ä¾‹å¤–,èªæ³•å½¢å¼ç‚º:
 	
-	try:
-		statement
-	except *exception*:
-		statement
+		try:
+			statement
+		except *exception*:
+			statement
 		
-1. ­º¥ı°õ¦ætryªº±Ô­z
-2. ­Y¨S¦³¨Ò¥~µo¥Í,tryªº±Ô­z°õ¦æ«áª½±µµ²§ô,¸õ¹Lexceptªº±Ô­z
-3. ­Y¨Ò¥~µo¥Í,·|¥ı¸õ¶}tryªº±Ô­z,°õ¦æ¬ÛÀ³ªº¨Ò¥~ªºexceptªº±Ô­z,¤@­Óexcept¥i§Q¥Î()«ü©w¦h­Ó¨Ò¥~
-4. ­Y¨S¦³¬ÛÀ³ªº¨Ò¥~,·|°õ¦æ¤£«ü©wªºexceptªº±Ô­z,¦¹¤£«ü©wªºexcept¥²¶·±Æ³Ì«á
-5. ­Y³s¤£«ü©wªºexcept³£¨S¦³,«h·|¸õ¦^tryªº±Ô­z,°õ¦æ¼Ğ·Çªº¨Ò¥~¦^³ø±Ô­z
+1. é¦–å…ˆåŸ·è¡Œtryçš„æ•˜è¿°
+2. è‹¥æ²’æœ‰ä¾‹å¤–ç™¼ç”Ÿ,tryçš„æ•˜è¿°åŸ·è¡Œå¾Œç›´æ¥çµæŸ,è·³éexceptçš„æ•˜è¿°
+3. è‹¥ä¾‹å¤–ç™¼ç”Ÿ,æœƒå…ˆè·³é–‹tryçš„æ•˜è¿°,åŸ·è¡Œç›¸æ‡‰çš„ä¾‹å¤–çš„exceptçš„æ•˜è¿°,ä¸€å€‹exceptå¯åˆ©ç”¨()æŒ‡å®šå¤šå€‹ä¾‹å¤–
+4. è‹¥æ²’æœ‰ç›¸æ‡‰çš„ä¾‹å¤–,æœƒåŸ·è¡Œä¸æŒ‡å®šçš„exceptçš„æ•˜è¿°,æ­¤ä¸æŒ‡å®šçš„exceptå¿…é ˆæ’æœ€å¾Œ
+5. è‹¥é€£ä¸æŒ‡å®šçš„exceptéƒ½æ²’æœ‰,å‰‡æœƒè·³å›tryçš„æ•˜è¿°,åŸ·è¡Œæ¨™æº–çš„ä¾‹å¤–å›å ±æ•˜è¿°
 	
 * else 
 
-	¦btry/except»y¥y«á¨Ï¥Îelse,­YµL¨Ò¥~«h·|°õ¦æelseªº±Ô­z,¨Ï¥Î¤W¥i¦³¥iµL,»yªk§Î¦¡¬°:
+	åœ¨try/exceptèªå¥å¾Œä½¿ç”¨else,è‹¥ç„¡ä¾‹å¤–å‰‡æœƒåŸ·è¡Œelseçš„æ•˜è¿°,ä½¿ç”¨ä¸Šå¯æœ‰å¯ç„¡,èªæ³•å½¢å¼ç‚º:
 	
-	try:
-		statement
-	except *exception*:
-		statement
-	else:
-		statement
+		try:
+			statement
+		except *exception*:
+			statement
+		else:
+			statement
 
 * finally
 
-	¦btry/except»y¥y«á¨Ï¥Îfinally,«hµL½×¦³µL¨Ò¥~³£·|°õ¦æfinallyªº±Ô­z,¥²¶·©ñ©óelse¤§«á,¨Ï¥Î¤W¥i¦³¥iµL,»yªk§Î¦¡¬°:
+	åœ¨try/exceptèªå¥å¾Œä½¿ç”¨finally,å‰‡ç„¡è«–æœ‰ç„¡ä¾‹å¤–éƒ½æœƒåŸ·è¡Œfinallyçš„æ•˜è¿°,å¿…é ˆæ”¾æ–¼elseä¹‹å¾Œ,ä½¿ç”¨ä¸Šå¯æœ‰å¯ç„¡,èªæ³•å½¢å¼ç‚º:
 	
-	try:
-		statement
-	except *exception*:
-		statement
-	else:
-		statement
-	finally:
-		statement
+		try:
+			statement
+		except *exception*:
+			statement
+		else:
+			statement
+		finally:
+			statement
 
