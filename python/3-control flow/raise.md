@@ -1,49 +1,49 @@
 # raise
 	
-* raise¥Î¨Óµo°_¨Ò¥~,¶i¦Ó¤¤Â_µ{¦¡,³z¹L¦b«ü©wªº¨Ò¥~«á¥Î¦r¦ê¸É¥R»¡©ú,«K¥i¦braiseµo°_®É¦b¨Ò¥~«áÅã¥Ü»¡©ú¤å:
+*   raiseç”¨ä¾†ç™¼èµ·ä¾‹å¤–,é€²è€Œä¸­æ–·ç¨‹å¼,é€éåœ¨æŒ‡å®šçš„ä¾‹å¤–å¾Œç”¨å­—ä¸²è£œå……èªªæ˜,ä¾¿å¯åœ¨raiseç™¼èµ·æ™‚åœ¨ä¾‹å¤–å¾Œé¡¯ç¤ºèªªæ˜æ–‡:
 
-	¿é¤J:
-	number = 100
-	if number > 10:
-		raise ValueError("Too big!")
-	print(number)
-
-	¿é¥X:
-	Traceback (most recent call last):
-	  File "python.py", line 3, in <module>
-		raise ValueError("Too big!")
-	ValueError: Too big!
-
-* ·íraise¥Î©ótryªº±Ô­z®É,µo°_ªº¨Ò¥~·|µ{§Ç°õ¦æ¤£«ü©wªºexceptªº±Ô­z
-
-	¿é¤J:
-	try:
-		number = 1 / 1
-		raise Exception
-	except ZeroDivisionError:   
-		print("An error occurred")
-	except:
+		è¼¸å…¥:
+		number = 100
+		if number > 10:
+			raise ValueError("Too big!")
 		print(number)
 
-	¿é¥X:
-	1.0
+		è¼¸å‡º:
+		Traceback (most recent call last):
+		  File "python.py", line 3, in <module>
+			raise ValueError("Too big!")
+		ValueError: Too big!
 
-* ·íraise¥Î©óexceptªº±Ô­z®É,raise¥i»¡©ú¨Ò¥~¤º®e
+*   ç•¶raiseç”¨æ–¼tryçš„æ•˜è¿°æ™‚,ç™¼èµ·çš„ä¾‹å¤–æœƒç¨‹åºåŸ·è¡Œä¸æŒ‡å®šçš„exceptçš„æ•˜è¿°
 
-	¿é¤J:
-	try:
-		number = 1 / 0
-	except :   
-		print("Error")
-		raise
+		è¼¸å…¥:
+		try:
+			number = 1 / 1
+			raise Exception
+		except ZeroDivisionError:   
+			print("An error occurred")
+		except:
+			print(number)
 
-	¿é¥X:
-	Error
-	Traceback (most recent call last):
-	  File "python.py", line 2, in <module>
-		number = 1 / 0
-	ZeroDivisionError: division by zero
+		è¼¸å‡º:
+		1.0
 
-**¶i¶¥**
+*   ç•¶raiseç”¨æ–¼exceptçš„æ•˜è¿°æ™‚,raiseå¯èªªæ˜ä¾‹å¤–å…§å®¹
 
-* ¥i¥H¦Û¦æ©w¸q¨Ò¥~,¦ı¥²¶·ª½±µ©Î¶¡±µÄ~©Ó¦ÛExceptionÃş
+		è¼¸å…¥:
+		try:
+			number = 1 / 0
+		except :   
+			print("Error")
+			raise
+
+		è¼¸å‡º:
+		Error
+		Traceback (most recent call last):
+		  File "python.py", line 2, in <module>
+			number = 1 / 0
+		ZeroDivisionError: division by zero
+
+**é€²éš**
+
+* å¯ä»¥è‡ªè¡Œå®šç¾©ä¾‹å¤–,ä½†å¿…é ˆç›´æ¥æˆ–é–“æ¥ç¹¼æ‰¿è‡ªExceptioné¡
