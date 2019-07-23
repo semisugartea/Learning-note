@@ -79,39 +79,39 @@ while...else有特殊用法,寫法上else要在while迴圈之後,且縮排要與
 	
 * 當while迴圈正常結束時,會執行else的敘述:
 
-	輸入:
-	i = 1
-	while i <=5:
-		print(i)
-		i += 1
-	else:
-		print("else")	
+		輸入:
+		i = 1
+		while i <=5:
+			print(i)
+			i += 1
+		else:
+			print("else")	
 
-	輸出:
-	1
-	2
-	3
-	4
-	5
-	else
+		輸出:
+		1
+		2
+		3
+		4
+		5
+		else
 
 
 * 當while迴圈因break中斷時,不會執行else的敘述:
 	
-	輸入:
-	i = 1
-	while i <=5:
-		print(i)
-		if i == 3:
-			break
-		i += 1
-	else:
-		print("else")	
+		輸入:
+		i = 1
+		while i <=5:
+			print(i)
+			if i == 3:
+				break
+			i += 1
+		else:
+			print("else")	
 
-	輸出:
-	1
-	2
-	3
+		輸出:
+		1
+		2
+		3
 	
 	
 	
