@@ -46,7 +46,6 @@ Python可透過if語句作流程控制,當判斷條件為真時執行敘述,其�
 * 使用elif的情況
 
 elif代表else if 的意思,若if的判斷條件為假時會先執行elif的判斷,條件為真時執行elif的敘述後結束判斷,條件為假時會由下一個elif判斷或執行else的敘述
-elif後可不接else,但不可在else後接elif,否則會導致SyntaxError
 
 	輸入:
 	i,j = 1, 1
@@ -60,6 +59,8 @@ elif後可不接else,但不可在else後接elif,否則會導致SyntaxError
 	輸出:
 	i+j = 2
 	Finished
+
+elif後可不接else,但不可在else後接elif,否則會導致SyntaxError
 
 
 *  可以有巢狀結構, 內層結束後才換外層
