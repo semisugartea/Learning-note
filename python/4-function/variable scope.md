@@ -1,31 +1,32 @@
-# ÅÜ¼Æ§@¥Î°ì variable scope
+# è®Šæ•¸ä½œç”¨åŸŸ variable scope
 
-	ÅÜ¼Æªº§@¥Î°ì·|¨M©wÅÜ¼Æ¥i¼vÅTªº½d³ò,¦bPython¤@¦@¤À¬°¥|ºØ,¤À§O¬O
+è®Šæ•¸çš„ä½œç”¨åŸŸæœƒæ±ºå®šè®Šæ•¸å¯å½±éŸ¿çš„ç¯„åœ,åœ¨Pythonä¸€å…±åˆ†ç‚ºå››ç¨®,åˆ†åˆ¥æ˜¯
 	
-	* Local			§½³¡§@¥Î°ì
-	* Enclosing		³¬¥]¨ç¼Æ¥~ªº¨ç¼Æ¤¤
-	* Global		¥ş§½§@¥Î°ì
-	* Built-in		¤º«Ø§@¥Î°ì
+	* Local			å±€éƒ¨ä½œç”¨åŸŸ
+	* Enclosing		é–‰åŒ…å‡½æ•¸å¤–çš„å‡½æ•¸ä¸­
+	* Global		å…¨å±€ä½œç”¨åŸŸ
+	* Built-in		å…§å»ºä½œç”¨åŸŸ
 
-	·íµ{§Ç¦b©I¥sÅÜ¼Æ®É,·|±q¤º¦Ó¥~§ä,§Y:Local§ä¤£¨ì´N©¹Enclosing§ä,¦A§ä¤£¨ì´N©¹Global§ä,¦A§ä¤£¨ì´N©¹Built-in§ä
+ç•¶ç¨‹åºåœ¨å‘¼å«è®Šæ•¸æ™‚,æœƒå¾å…§è€Œå¤–æ‰¾,å³:Localæ‰¾ä¸åˆ°å°±å¾€Enclosingæ‰¾,å†æ‰¾ä¸åˆ°å°±å¾€Globalæ‰¾,å†æ‰¾ä¸åˆ°å°±å¾€Built-inæ‰¾
 
-	apple = 1			#¥ş§½§@¥Î°ì
+	apple = 1			#å…¨å±€ä½œç”¨åŸŸ
 	def out():
-		banana = 2		#³¬¥]¨ç¼Æ¥~ªº¨ç¼Æ¤¤
+		banana = 2		#é–‰åŒ…å‡½æ•¸å¤–çš„å‡½æ•¸ä¸­
 		def in():
-			cat = 3		#§½³¡§@¥Î°ì
+			cat = 3		#å±€éƒ¨ä½œç”¨åŸŸ
 
-	¤º«Ø§@¥Î°ì¬O«ü³z¹L¼Ğ·Ç¼Ò²Õbuiltinªº¤º®e«Ø¥ßªº§@¥Î°ì,¥i³z¹Ldir()¬d¸ß
+å…§å»ºä½œç”¨åŸŸæ˜¯æŒ‡é€éæ¨™æº–æ¨¡çµ„builtinçš„å…§å®¹å»ºç«‹çš„ä½œç”¨åŸŸ,å¯é€édir()æŸ¥è©¢
 
 	>>> dir(__builtins__)
 	['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
 
 # global
 
-	* ¨Ì§@¥Î°ìªº³W«h,¤º³¡ªº§@¥Î°ì¥i¥H©I¥s¥~³¡§@¥Î°ìªºÅÜ¼Æ,­YÅÜ¼Æ¬O¥iÅÜªº,«h§ïÅÜ¥~³¡ªºÅÜ¼Æ;­YÅÜ¼Æ¬O¤£¥iÅÜªº,«h¤£¥i­«·s«ü¬£.
+ä¾ä½œç”¨åŸŸçš„è¦å‰‡,å…§éƒ¨çš„ä½œç”¨åŸŸå¯ä»¥å‘¼å«å¤–éƒ¨ä½œç”¨åŸŸçš„è®Šæ•¸,è‹¥è®Šæ•¸æ˜¯å¯è®Šçš„,å‰‡æ”¹è®Šå¤–éƒ¨çš„è®Šæ•¸;è‹¥è®Šæ•¸æ˜¯ä¸å¯è®Šçš„,å‰‡ä¸å¯é‡æ–°æŒ‡æ´¾.
 
-¥iÅÜ:
-	¿é¤J:
+å¯è®Š:
+
+	è¼¸å…¥:
 	a = [1]
 	def f1():
 		a.append(1)
@@ -34,12 +35,13 @@
 	f1()
 	print(a)
 
-	¿é¥X:
+	è¼¸å‡º:
 	[1, 1]
 	[1, 1]
 
-¤£¥iÅÜ:
-	¿é¤J:
+ä¸å¯è®Š:
+
+	è¼¸å…¥:
 	a = 1
 	def f1():
 		a += 1
@@ -47,7 +49,7 @@
 
 	f1()
 
-	¿é¥X:
+	è¼¸å‡º:
 	Traceback (most recent call last):
 	  File "python.py", line 6, in <module>
 		f1()
@@ -55,9 +57,9 @@
 		a += 1
 	UnboundLocalError: local variable 'a' referenced before assignment
 
-	* ¨Ï¥Îglobal«Å§i¥ş§½ÅÜ¼Æ¦WºÙ,¥i­«·s«ü¬£¨Ã§ïÅÜ¥~³¡ÅÜ¼Æ
+	* ä½¿ç”¨globalå®£å‘Šå…¨å±€è®Šæ•¸åç¨±,å¯é‡æ–°æŒ‡æ´¾ä¸¦æ”¹è®Šå¤–éƒ¨è®Šæ•¸
 
-	¿é¤J:
+	è¼¸å…¥:
 	a = 1
 	def f1():
 		global a
@@ -67,15 +69,15 @@
 	f1()
 	print(a)
 
-	¿é¥X:
+	è¼¸å‡º:
 	2
 	2
 
 # nonlocal
 
-	­Y¬O­n§½³¡§@¥Î°ì¨Ï¥ÎEnclosing§@¥Î°ìªºÅÜ¼Æ,¥i¨Ï¥Înonloacal
+è‹¥æ˜¯è¦å±€éƒ¨ä½œç”¨åŸŸä½¿ç”¨Enclosingä½œç”¨åŸŸçš„è®Šæ•¸,å¯ä½¿ç”¨nonloacal
 
-	¿é¤J:
+	è¼¸å…¥:
 	def f1():
 		a = 1
 		def f2():
@@ -87,31 +89,9 @@
 
 	f1()
 
-	¿é¥X:
+	è¼¸å‡º:
 	2
 	2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
