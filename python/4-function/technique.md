@@ -1,8 +1,8 @@
-# ¤åÀÉ¦r²Å¦ê DocStrings
+# æ–‡æª”å­—ç¬¦ä¸² DocStrings
 
-	¦b¨ç¼Æ¤¤¥i¨Ï¥Î¤@¹ï¤T­Ó¤Ş¸¹'''§@µù¸Ñ,¥i¨Ï¥Îprint(*function_name*.__doc__)Åã¥Ü¤º®e
+åœ¨å‡½æ•¸ä¸­å¯ä½¿ç”¨ä¸€å°ä¸‰å€‹å¼•è™Ÿ'''ä½œè¨»è§£,å¯ä½¿ç”¨print(*function_name*.__doc__)é¡¯ç¤ºå…§å®¹
 
-	¿é¤J:
+	è¼¸å…¥:
 	def hello():
 		'''hello world
 		'''
@@ -10,43 +10,43 @@
 	 
 	print(hello.__doc__)
 
-	¿é¥X:
+	è¼¸å‡º:
 	hello world
 
-# »¼°j recursion
+# éè¿´ recursion
 
-* »¼°j¬O«ü¨ç¼Æ©I¥s¦Û¤vªº¨ç¼Æ¦W,¦¹®É©I¥sªÌ¼È°±¨Ãµ¥«İ¦^¶Ç­È,°õ¦æ³Q©I¥sªÌ,¦^¶Ç¦³®Äªº­È«á¦A°õ¦æ©I¥sªÌ,¥H¤U§Q¥Î¶¥­¼¨ç¼Æ¬°¨Ò
+*   éè¿´æ˜¯æŒ‡å‡½æ•¸å‘¼å«è‡ªå·±çš„å‡½æ•¸å,æ­¤æ™‚å‘¼å«è€…æš«åœä¸¦ç­‰å¾…å›å‚³å€¼,åŸ·è¡Œè¢«å‘¼å«è€…,å›å‚³æœ‰æ•ˆçš„å€¼å¾Œå†åŸ·è¡Œå‘¼å«è€…,ä»¥ä¸‹åˆ©ç”¨éšä¹˜å‡½æ•¸ç‚ºä¾‹
 
-	¿é¤J:
-	def fac(n):
-		print(n)
-		if n == 1:
-			return 1
-		else: 
-			a = n * fac(n-1)
+		è¼¸å…¥:
+		def fac(n):
 			print(n)
-			return a
-		
-	print(fac(3))
+			if n == 1:
+				return 1
+			else: 
+				a = n * fac(n-1)
+				print(n)
+				return a
 
-	¿é¥X:
-	3
-	2
-	1
-	2
-	3
-	6
+		print(fac(3))
 
-* ­Y¤£³]©w²×ÂI­È,·|¾É­PRuntimeErrorªº¨Ò¥~
+		è¼¸å‡º:
+		3
+		2
+		1
+		2
+		3
+		6
 
-	¿é¤J:
-	def fac(n):
-		return n * fac(n-1)
+*   è‹¥ä¸è¨­å®šçµ‚é»å€¼,æœƒå°è‡´RuntimeErrorçš„ä¾‹å¤–
 
-	¿é¥X:
-	RuntimeError: maximum recursion depth exceeded
+		è¼¸å…¥:
+		def fac(n):
+			return n * fac(n-1)
 
-* »¼°j¥i¥H¬O¶¡±µªº,§Y¨ç¼Æ©I¥s§Oªº¨ç¼Æ¦W,¦Ó¸Ó¨ç¼Æ©I¥s¦Û¤vªº¨ç¼Æ¦W
+		è¼¸å‡º:
+		RuntimeError: maximum recursion depth exceeded
+
+* éè¿´å¯ä»¥æ˜¯é–“æ¥çš„,å³å‡½æ•¸å‘¼å«åˆ¥çš„å‡½æ•¸å,è€Œè©²å‡½æ•¸å‘¼å«è‡ªå·±çš„å‡½æ•¸å
 
 
 
