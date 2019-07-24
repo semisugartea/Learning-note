@@ -34,7 +34,7 @@
 
 # lambda與函數
 
-	lambda常與map(),filter(),reduce()?????????????????
+lambda常與map(),filter(),reduce()等函數一起使用
 
 * map(function, sequence)			將序列元素分別傳入函數,將函數的回傳值作為新的元素,回傳新元素組成的序列,簡稱映射
 
