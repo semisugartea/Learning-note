@@ -1,41 +1,41 @@
-# Å|¥N¾¹ iterator
+# ç–Šä»£å™¨ iterator
 
-Å|±a(iteration):§Q¥Î°j°é¹M¾ú¹ï¶Hªº¤¸¯Àªº°Ê§@
-¥iÅ|±a¹ï¶H(iterable):¥i³Q¹M¾ú¤¸¯Àªº¹ï¶H
-Å|¥N¾¹(iterator):¥i°õ¦æÅ|±aªºµ{§Ç
+ç–Šå¸¶(iteration):åˆ©ç”¨è¿´åœˆéæ­·å°è±¡çš„å…ƒç´ çš„å‹•ä½œ
+å¯ç–Šå¸¶å°è±¡(iterable):å¯è¢«éæ­·å…ƒç´ çš„å°è±¡
+ç–Šä»£å™¨(iterator):å¯åŸ·è¡Œç–Šå¸¶çš„ç¨‹åº
 
-* iter(obj)			§Q¥Îª«¥ó¥Í¦¨Å|¥N¾¹
+* iter(obj)			åˆ©ç”¨ç‰©ä»¶ç”Ÿæˆç–Šä»£å™¨
 
-* next(iterator)	Åª¨úÅ|¥N¾¹ªº¤U¤@­Ó¶µ¥Ø,·íÅª¤£¨ìª«¥ó®É,·|²£¥ÍStopIterationªº¨Ò¥~
+*   next(iterator)	è®€å–ç–Šä»£å™¨çš„ä¸‹ä¸€å€‹é …ç›®,ç•¶è®€ä¸åˆ°ç‰©ä»¶æ™‚,æœƒç”¢ç”ŸStopIterationçš„ä¾‹å¤–
 
-	¿é¤J:
-	list1=[1,2,3,4]
-	a = iter(list1)
-	print(next(a))
-	print(next(a))
-	print(next(a))
-	print(next(a))
-	print(next(a))
-
-	¿é¥X:
-	1
-	2
-	3
-	4
-	Traceback (most recent call last):
-	  File "python.py", line 7, in <module>
+		è¼¸å…¥:
+		list1=[1,2,3,4]
+		a = iter(list1)
 		print(next(a))
-	StopIteration
+		print(next(a))
+		print(next(a))
+		print(next(a))
+		print(next(a))
+
+		è¼¸å‡º:
+		1
+		2
+		3
+		4
+		Traceback (most recent call last):
+		  File "python.py", line 7, in <module>
+			print(next(a))
+		StopIteration
 
 # yield
 
-	¦b¨ç¼Æ¤¤¨Ï¥Îyield®É,¥i¥H²£¥Í¤@²Õª«¥ó,¨Ã¦^¶Çª«¥óªº¦ì§}«á¼È°±,·í¨ç¼Æ¦b³Q©I¥s®ÉÄ~Äò,¥i¥Hµø§@»P¥Dµ{§Ç¥­¦æ¹B§@,¦Ó¦¹¨ç¼Æ¥i¥HÅÜ¦¨Å|¥N¾¹
+åœ¨å‡½æ•¸ä¸­ä½¿ç”¨yieldæ™‚,å¯ä»¥ç”¢ç”Ÿä¸€çµ„ç‰©ä»¶,ä¸¦å›å‚³ç‰©ä»¶çš„ä½å€å¾Œæš«åœ,ç•¶å‡½æ•¸åœ¨è¢«å‘¼å«æ™‚ç¹¼çºŒ,å¯ä»¥è¦–ä½œèˆ‡ä¸»ç¨‹åºå¹³è¡Œé‹ä½œ,è€Œæ­¤å‡½æ•¸å¯ä»¥è®Šæˆç–Šä»£å™¨
 	
-* for°j°é
+* forè¿´åœˆ
 	
-	¥i§Q¥Îfor°j°éÅª¨úª«¥ó,·í¨ç¼Æµ²§ô®É°j°éµ²§ô
+å¯åˆ©ç”¨forè¿´åœˆè®€å–ç‰©ä»¶,ç•¶å‡½æ•¸çµæŸæ™‚è¿´åœˆçµæŸ
 
-	¿é¤J:
+	è¼¸å…¥:
 	def count(n):
 		i =1
 		print('start')
@@ -51,7 +51,7 @@
 		print(j)
 		print('pause')
 
-	¿é¥X:
+	è¼¸å‡º:
 	<generator object count at 0x00000175C31EB5E8>
 	start
 	hello
@@ -67,9 +67,9 @@
 
 * next()
 
-	¥i§Q¥Î¨ç¼Ænext()º¥¶i¦¡ªºÅª¨úª«¥ó,·íÅª¤£¨ìª«¥ó®É,·|²£¥ÍStopIterationªº¨Ò¥~
+å¯åˆ©ç”¨å‡½æ•¸next()æ¼¸é€²å¼çš„è®€å–ç‰©ä»¶,ç•¶è®€ä¸åˆ°ç‰©ä»¶æ™‚,æœƒç”¢ç”ŸStopIterationçš„ä¾‹å¤–
 
-	¿é¤J:
+	è¼¸å…¥:
 	def count(n):
 		i =1
 		while i <=n:
@@ -82,7 +82,7 @@
 	print(next(a))
 	print(next(a))
 
-	¿é¥X:
+	è¼¸å‡º:
 	1
 	2
 	3
@@ -91,12 +91,13 @@
 		print(next(a))
 	StopIteration
 
-* »Preturnªº®t²§
+* èˆ‡returnçš„å·®ç•°
 
-	¦b²£¥Í¤@­Ó§Ç¦C¤W,return¥²¶·¤@¦¸«Ø¥ß¾ã­Ó§Ç¦C,¦Óyield¥u­n¤@¦¸«Ø¥ß¤@­Ó,¬Û¹ï¬Ù«Ü¦hªÅ¶¡,¥H¤U§Q¥Î¶O¤ó¼Æ¦C¬°¨Ò
+åœ¨ç”¢ç”Ÿä¸€å€‹åºåˆ—ä¸Š,returnå¿…é ˆä¸€æ¬¡å»ºç«‹æ•´å€‹åºåˆ—,è€Œyieldåªè¦ä¸€æ¬¡å»ºç«‹ä¸€å€‹,ç›¸å°çœå¾ˆå¤šç©ºé–“,ä»¥ä¸‹åˆ©ç”¨è²»æ°æ•¸åˆ—ç‚ºä¾‹
 
 return:
-	¿é¤J:
+
+	è¼¸å…¥:
 	def fab(n): 
 		count, a, b = 0, 0, 1 
 		seq = [] 
@@ -108,7 +109,7 @@ return:
 
 	print(len(fab(6)))
 
-	¿é¥X:
+	è¼¸å‡º:
 	[1, 1, 2, 3, 5, 8]
 	1
 	1
@@ -118,7 +119,8 @@ return:
 	8
 
 yield:
-	¿é¤J:
+
+	è¼¸å…¥:
 	def fab(n): 
 		count, a, b = 0, 0, 1 
 		while count < n: 
@@ -130,7 +132,7 @@ yield:
 	for i in fab(6):
 		print(i)
 
-	¿é¥X:
+	è¼¸å‡º:
 	<generator object fab at 0x00000257AE58B5E8>
 	1
 	1
