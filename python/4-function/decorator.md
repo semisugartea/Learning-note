@@ -1,28 +1,34 @@
-# ¸Ë¹¢¾¹ decorator
+# è£é£¾å™¨ decorator
 
-	¸Ë¹¢¾¹¬O©w¸q¨ç¼Æ©Î¤èªkªº¤@ºØÂ²¤Æ»yªk¡A¥D­n¬OÅı·s©w¸qªº¨ç¼Æ¡A¥i¥H¦³®Ä´î¤ÖÁc½Æªº¥Î¨ç¼Æ·í°Ñ¼Æ¡A©Î¬O¨ç¼Æ¦^¶Ç¨ç¼Æªº¼gªk¡C
+è£é£¾å™¨æ˜¯å®šç¾©å‡½æ•¸æˆ–æ–¹æ³•çš„ä¸€ç¨®ç°¡åŒ–èªæ³•ï¼Œä¸»è¦æ˜¯è®“æ–°å®šç¾©çš„å‡½æ•¸ï¼Œå¯ä»¥æœ‰æ•ˆæ¸›å°‘ç¹è¤‡çš„ç”¨å‡½æ•¸ç•¶åƒæ•¸ï¼Œæˆ–æ˜¯å‡½æ•¸å›å‚³å‡½æ•¸çš„å¯«æ³•ã€‚
 
-¥H¤U¬°¨Ò,¥Dµ{§Ç¤W¥Îrose¥NºÙf1(f2),¦Ó¨ç¼Æf1ªº§@¥Î¬O¶Ç¤J¨ç¼Æf2¦A¶Ç¥X¨ç¼Æflower,f2ÅÜ¦¨f1ªº°Ñ¼Æ
+ä»¥ä¸‹ç‚ºä¾‹,ä¸»ç¨‹åºä¸Šç”¨roseä»£ç¨±f1(f2),è€Œå‡½æ•¸f1çš„ä½œç”¨æ˜¯å‚³å…¥å‡½æ•¸f2å†å‚³å‡ºå‡½æ•¸flower,f2è®Šæˆf1çš„åƒæ•¸
 
+	è¼¸å…¥:
 	def f1(func):
 		def flower(color2):
 			print('flower')
-			return 'color:'+func(color2)				#3	°Ñ¼Æfunc¬O¥Ñf1¶Ç¤Jªºf2,°Ñ¼Æcolor2«h¬O¤Ş¼Æarg
-		return flower								#2	f1(func))(arg)ÅÜ¦¨flower(arg), ¦ı¹ê»Ú¤Wflower»İ­n¶Ç¤J¨ç¼Æ
+			return 'color:'+func(color2)		#3	åƒæ•¸funcæ˜¯ç”±f1å‚³å…¥çš„f2,åƒæ•¸color2å‰‡æ˜¯å¼•æ•¸arg
+		return flower				#2	f1(func))(arg)è®Šæˆflower(arg), ä½†å¯¦éš›ä¸Šfloweréœ€è¦å‚³å…¥å‡½æ•¸
 
 	def f2(color1):
 		return color1
 
 	rose = f1(f2)
-	print(rose('red'))							#1	µ¥»ù©óprint((f1(f2))('red'))
-	
-­Y¦bf2«e¥[¤W¸Ë¹¢¾¹,§Y@¨ç¼Æ¦W,«hf2ªº¥\¯à´N·|¸òf1(f2)¤@¼Ë,¤]´N¬O±Nf2ÂX¥R¦¨¤£¨Ï¥Î¸Ë¹¢¾¹ªºf1(f2),¥Ñdef f2()ªº¤º®e°µ¬°¨ç¼Æ¶Ç¤Jf1(),¬Ù²¤±Nf2³]¬°f1ªº°Ñ¼Æªº¨BÆJ
-	
+	print(rose('red'))			#1	ç­‰åƒ¹æ–¼print((f1(f2))('red'))
+
+	è¼¸å‡º:
+	flower
+	color:red
+
+è‹¥åœ¨f2å‰åŠ ä¸Šè£é£¾å™¨,å³@å‡½æ•¸å,å‰‡f2çš„åŠŸèƒ½å°±æœƒè·Ÿf1(f2)ä¸€æ¨£,ä¹Ÿå°±æ˜¯å°‡f2æ“´å……æˆä¸ä½¿ç”¨è£é£¾å™¨çš„f1(f2),ç”±def f2()çš„å…§å®¹åšç‚ºå‡½æ•¸å‚³å…¥f1(),çœç•¥å°‡f2è¨­ç‚ºf1çš„åƒæ•¸çš„æ­¥é©Ÿ
+
+	è¼¸å…¥:
 	def f1(func):
-	def flower(color2):
-		print('flower')
-		return 'color:'+func(color2)
-	return flower
+		def flower(color2):
+			print('flower')
+			return 'color:'+func(color2)
+		return flower
 
 	@f1
 	def f2(color1):
@@ -30,8 +36,13 @@
 
 	print(f2('red'))
 
-¸Ë¹¢¾¹¥i¥H¤£¥u¤@­Ó,¨Ì¶¶§Ç¥Ñ¥~¦Ó¤º,³Q@ªº¨ç¼Æ¥²¶·¦b¸Ë¹¢¾¹«e,¤U¨Òªºf2ªº¥\¯à´N·|¸ò¤£¨Ï¥Î¸Ë¹¢¾¹ªºf3(f1(f2))¤@¼Ë
+	è¼¸å‡º:
+	flower
+	color:red
 
+è£é£¾å™¨å¯ä»¥ä¸åªä¸€å€‹,ä¾é †åºç”±å¤–è€Œå…§,è¢«@çš„å‡½æ•¸å¿…é ˆåœ¨è£é£¾å™¨å‰,ä¸‹ä¾‹çš„f2çš„åŠŸèƒ½å°±æœƒè·Ÿä¸ä½¿ç”¨è£é£¾å™¨çš„f3(f1(f2))ä¸€æ¨£
+
+	è¼¸å…¥:
 	def f1(func):
 		def flower(color2):
 			print('flower')
@@ -49,3 +60,7 @@
 		return color1
 
 	print(f2('red'))
+	
+	è¼¸å‡º:
+	flower
+	description:color:red
