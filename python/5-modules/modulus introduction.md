@@ -1,23 +1,23 @@
-# °ò¥»¤¶²Ð
+# åŸºæœ¬ä»‹ç´¹
 
-	¼Ò²Õ(modules)¬O«ü¥]§t©w¸qÅÜ¼Æ»P¨ç¼Æªº¤å¥ó,¨ä°ÆÀÉ¦W¬°.py
+æ¨¡çµ„(modules)æ˜¯æŒ‡åŒ…å«å®šç¾©è®Šæ•¸èˆ‡å‡½æ•¸çš„æ–‡ä»¶,å…¶å‰¯æª”åç‚º.py
 
-# ¨Ï¥Î¤è¦¡
+# ä½¿ç”¨æ–¹å¼
 
 * import
 
-	¨Ï¥Îimport *¼Ò²Õ¦W*¥i¥H±N¼Ò²Õ¤Þ¤J,¨ä¤¤ªºÅÜ¼Æ»P¨ç¼Æ­n¦b«e­±¥[¤J¨ç¼Æ¦W©MÂI¸¹.¤~¥i¨Ï¥Î
+ä½¿ç”¨import *æ¨¡çµ„å*å¯ä»¥å°‡æ¨¡çµ„å¼•å…¥,å…¶ä¸­çš„è®Šæ•¸èˆ‡å‡½æ•¸è¦åœ¨å‰é¢åŠ å…¥å‡½æ•¸åå’Œé»žè™Ÿ.æ‰å¯ä½¿ç”¨
 
 	import math
 	print(math.pi)
 	print(math.floor(math.pi))
 
-	* ­Y¤Þ¤J¥¢±Ñ,·|¾É­Pµo¥ÍImportErrorªº¨Ò¥~
-	* ¤@­Ó¼Ò²Õ¥u·|³Q¤Þ¤J¤@¦¸
+1. è‹¥å¼•å…¥å¤±æ•—,æœƒå°Žè‡´ç™¼ç”ŸImportErrorçš„ä¾‹å¤–
+2. ä¸€å€‹æ¨¡çµ„åªæœƒè¢«å¼•å…¥ä¸€æ¬¡
 	
 * as
 
-	¨Ï¥Îimport *¼Ò²Õ¦W* as *¦WºÙ* ¥i¥H§ïÅÜ¤Þ¤Jªº¼Ò²Õ¦b¤å¥ó¤¤ªº¦WºÙ,¤@­Ó¼Ò²Õ¥i¥H¦³¦h­ÓºÙ©I
+ä½¿ç”¨import *æ¨¡çµ„å* as *åç¨±* å¯ä»¥æ”¹è®Šå¼•å…¥çš„æ¨¡çµ„åœ¨æ–‡ä»¶ä¸­çš„åç¨±,ä¸€å€‹æ¨¡çµ„å¯ä»¥æœ‰å¤šå€‹ç¨±å‘¼
 
 	import math as apple
 	import math as banana
@@ -26,55 +26,58 @@
 
 * from
 
-	¨Ï¥Îfrom¥i¥H¥u¤Þ¤J³¡¤À¼Ò²Õ,»yªk¦p¤U:
+ä½¿ç”¨fromå¯ä»¥åªå¼•å…¥éƒ¨åˆ†æ¨¡çµ„,èªžæ³•å¦‚ä¸‹:
 
-	from *¼Ò²Õ¦W* import name1[, name2[, ... nameN]]
+		from *æ¨¡çµ„å* import name1[, name2[, ... nameN]]
 
-	¨Ï¥Î¦¹¤è¦¡¤Þ¤JªºÅÜ¼Æ»P¨ç¼Æ¥i¥H¤£¥[«eºó
+ä½¿ç”¨æ­¤æ–¹å¼å¼•å…¥çš„è®Šæ•¸èˆ‡å‡½æ•¸å¯ä»¥ä¸åŠ å‰ç¶´
 
 	from math import pi
 	print(pi)
 
 
-	from *¼Ò²Õ¦W* import \* ¥i¥H±N¼Ò²Õ¥þ³¡¤Þ¤J
+	from *æ¨¡çµ„å* import \* å¯ä»¥å°‡æ¨¡çµ„å…¨éƒ¨å¼•å…¥
 
 	from math import *
 	print(pi)
 	print(floor(pi))
 
-# ½T»{¼Ò²Õ¬O§_³Q¤Þ¤J
+# ç¢ºèªæ¨¡çµ„æ˜¯å¦è¢«å¼•å…¥
 
-	¦pªG¤£­n¤@¬qµ{¦¡½X¦b³Q¤Þ¤J«á°õ¦æ,¥i¥H½T»{ÅÜ¼Æ__name__¬O§_µ¥©ó__main__
-	­Yµ¥©ó,«h¥Nªí¸Ó¼Ò²Õ¦Û¨­¦b°õ¦æ¤¤,§_«h¥Nªí³Q¤Þ¤J¤¤
+å¦‚æžœä¸è¦ä¸€æ®µç¨‹å¼ç¢¼åœ¨è¢«å¼•å…¥å¾ŒåŸ·è¡Œ,å¯ä»¥ç¢ºèªè®Šæ•¸__name__æ˜¯å¦ç­‰æ–¼__main__
+
+è‹¥ç­‰æ–¼,å‰‡ä»£è¡¨è©²æ¨¡çµ„è‡ªèº«åœ¨åŸ·è¡Œä¸­,å¦å‰‡ä»£è¡¨è¢«å¼•å…¥ä¸­
 	
-	¤å¥ó¦W:test.py
+	æ–‡ä»¶å:test.py
 	if __name__ == '__main__':
 	   print('main')
 	else:
 	   print('other')
 
-	²×ºÝ¾÷¿é¤J:
+çµ‚ç«¯æ©Ÿè¼¸å…¥:
+
 	$ python test.py
 	main
 
-	ª½Ä¶¾¹¿é¤J:
+ç›´è­¯å™¨è¼¸å…¥:
+
 	>>> import test
 	other
 
 # dir
 
-	* ¦bimport¼Ò²Õ«á,¥i§Q¥Îdir(*¼Ò²Õ¦W*)¬d¬Ý¸Ó¼Ò²Õªº©Ò¦³ÅÜ¼Æ
+*   åœ¨importæ¨¡çµ„å¾Œ,å¯åˆ©ç”¨dir(*æ¨¡çµ„å*)æŸ¥çœ‹è©²æ¨¡çµ„çš„æ‰€æœ‰è®Šæ•¸
 
-	>>> import math
-	>>> dir(math)
-	['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+		>>> import math
+		>>> dir(math)
+		['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
 
-	­Y¤£¿é¤J*¼Ò²Õ¦W*,«h·|Åã¥Ü·í«e©Ò¦³ÅÜ¼Æ©M¼Ò²Õ¦W
+è‹¥ä¸è¼¸å…¥*æ¨¡çµ„å*,å‰‡æœƒé¡¯ç¤ºç•¶å‰æ‰€æœ‰è®Šæ•¸å’Œæ¨¡çµ„å
 
 	>>> dir()
 	['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'math']
 
-	¨Ï¥Îdel¥i¥h°£¼Ò²Õ
+	ä½¿ç”¨delå¯åŽ»é™¤æ¨¡çµ„
 
 	>>> del math
 	>>> dir()
