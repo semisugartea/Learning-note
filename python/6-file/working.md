@@ -1,8 +1,8 @@
-# ¨Ò¥~³B²z
+# ä¾‹å¤–è™•ç†
 
 * try/finally
 
-	¬°Á×§KÀÉ®×Åª¨ú¥¢±Ñµo¥Íªº¨Ò¥~,¥i¨Ï¥Îtry/finally¨Ó¥´¶}¤å¥ó
+ç‚ºé¿å…æª”æ¡ˆè®€å–å¤±æ•—ç™¼ç”Ÿçš„ä¾‹å¤–,å¯ä½¿ç”¨try/finallyä¾†æ‰“é–‹æ–‡ä»¶
 	
 	try:
 	   file = open("test.txt")
@@ -12,12 +12,12 @@
 
 * with ..as
 
-	¨Ï¥Îwith»y¥y¥iÂ²¤Æ¤W¨Ò,·|¦Û°ÊÃö³¬ÀÉ®×,»yªk¬° with *¤å¥ó¦W* [as *ÅÜ¼Æ¦W*]
+ä½¿ç”¨withèªå¥å¯ç°¡åŒ–ä¸Šä¾‹,æœƒè‡ªå‹•é—œé–‰æª”æ¡ˆ,èªæ³•ç‚º with *æ–‡ä»¶å* [as *è®Šæ•¸å*]
 	
 	with "test.txt" as file:
 		print(file.read())
 
-	¤]¥i¥HÅª¨ú¦hÀÉ®×:
+ä¹Ÿå¯ä»¥è®€å–å¤šæª”æ¡ˆ:
 	
 	with "test1.txt" as file1, "test2.txt" as file2:
 		print(file1.read())
