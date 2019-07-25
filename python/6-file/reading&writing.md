@@ -1,28 +1,29 @@
-# Åª¨ú reading
+# è®€å– reading
 
-* read()¤èªk
+* read()æ–¹æ³•
 
-	¦b¤å¥óÅÜ¼Æ«á¥[¤W.read()¥i¥HÅª¨ú¤å¥ó¤º®e
+åœ¨æ–‡ä»¶è®Šæ•¸å¾ŒåŠ ä¸Š.read()å¯ä»¥è®€å–æ–‡ä»¶å…§å®¹
 
-	test.txt¤º®e:
+test.txtå…§å®¹:
 	applebananacatdog
 	123456
 	hello world
 	
-	¿é¤J:
+è¼¸å…¥:
 	file = open("test.txt", "r")
 	content = file.read()
 	print(content)
 	file.close()
 
-	¿é¥X:
+è¼¸å‡º:
 	applebananacatdog
 	123456
 	hello world
 
-	¥¿¦¡»yªk¬°read(*size*),*size*¥NªíÅª¨úªº¦r¼Æ,¤U¨Ò¥i¬İ¥XÅª¨ú¥u©¹«e¤£¦^ÀYªº
+æ­£å¼èªæ³•ç‚ºread(*size*),*size*ä»£è¡¨è®€å–çš„å­—æ•¸,ä¸‹ä¾‹å¯çœ‹å‡ºè®€å–åªå¾€å‰ä¸å›é ­çš„
 
-	¿é¤J:
+è¼¸å…¥:
+
 	file = open("test.txt", "r")
 	print(file.read(5))
 	print(file.read(8))
@@ -30,7 +31,8 @@
 	print(file.read())
 	file.close()
 
-	¿é¥X:
+è¼¸å‡º:
+
 	apple
 	bananaca
 	tdog
@@ -38,9 +40,10 @@
 	h
 	ello world
 
-	¤@­Ó¤å¥ó¦b¤@¦¸¶}±Ò¤¤¥u¯àÅª¨ú¤@¦¸
+ä¸€å€‹æ–‡ä»¶åœ¨ä¸€æ¬¡é–‹å•Ÿä¸­åªèƒ½è®€å–ä¸€æ¬¡
 
-	¿é¤J:
+è¼¸å…¥:
+
 	file = open("test.txt", "r")
 	file.read()
 	print('read again')
@@ -48,63 +51,64 @@
 	print('stop')
 	file.close()
 
-	¿é¥X:
+è¼¸å‡º:
+
 	read again
 
 	stop
 
-* readline() ©M readline()¤èªk
+* readline() å’Œ readline()æ–¹æ³•
 	
-	¨Ï¥Îreadline()¤èªk¥iÅª¨ú¤@¦æ
+	ä½¿ç”¨readline()æ–¹æ³•å¯è®€å–ä¸€è¡Œ
 	
-	¿é¤J:
+	è¼¸å…¥:
 	file = open("test.txt", "r")
 	print(file.readline())
 	print(file.readline())
 	print(file.readline())
 	file.close()
 
-	¿é¥X:
+	è¼¸å‡º:
 	applebananacatdog
 
 	123456
 
 	hello world
 
-	¨Ï¥Îreadlines()¤èªk¥iÅª¨ú¦h¦æ¨Ã«Ø¥ß¦Cªí
+	ä½¿ç”¨readlines()æ–¹æ³•å¯è®€å–å¤šè¡Œä¸¦å»ºç«‹åˆ—è¡¨
 	
-	¿é¤J:
+	è¼¸å…¥:
 	file = open("test.txt", "r")
 	print(file.readlines())
 	file.close()
 	
-	¿é¥X:
+	è¼¸å‡º:
 	['applebananacatdog\n', '123456\n', 'hello world']
 	
-* for°j°é
+* forè¿´åœˆ
 	
-	¨Ï¥Îfor°j°é¥i¤À¦æÅã¥Ü
+	ä½¿ç”¨forè¿´åœˆå¯åˆ†è¡Œé¡¯ç¤º
 	
-	¿é¤J:
+	è¼¸å…¥:
 	file = open("test.txt", "r")
 	for i in file:
 		print(i)
 	file.close()
 	
-	¿é¥X:
+	è¼¸å‡º:
 	applebananacatdog
 
 	123456
 
 	hello world
 	
-# ¼g¤J writing
+# å¯«å…¥ writing
 
-* write() ¤èªk
+* write() æ–¹æ³•
 
-	¨Ï¥Îwrite()¤èªk¥i¥H±N()ªº¤º®e¼g¤J¤å¥ó,¤º®e¥²¶·¬O**¦r¦ê**
+	ä½¿ç”¨write()æ–¹æ³•å¯ä»¥å°‡()çš„å…§å®¹å¯«å…¥æ–‡ä»¶,å…§å®¹å¿…é ˆæ˜¯**å­—ä¸²**
 	
-	¿é¤J:
+	è¼¸å…¥:
 	file = open("test.txt", "w")
 	file.write("New things")
 	file.close()
@@ -113,14 +117,14 @@
 	print(file.read())
 	file.close()
 	
-	¿é¥X:
+	è¼¸å‡º:
 	New things
 	
-	¦¹®Étest.txtªº¤º®e¬O:
+	æ­¤æ™‚test.txtçš„å…§å®¹æ˜¯:
 		New things
-	¥Nªí­ì¦³¤º®e·|§¹¥ş§R°£«á¦A¶ñ¤J·s¤º®e
+	ä»£è¡¨åŸæœ‰å…§å®¹æœƒå®Œå…¨åˆªé™¤å¾Œå†å¡«å…¥æ–°å…§å®¹
 	
-	write()¤èªk·|¦^¶Ç¼g¤J¦r¦êªº¦r¼Æ
+	write()æ–¹æ³•æœƒå›å‚³å¯«å…¥å­—ä¸²çš„å­—æ•¸
 	
 	file = open("test.txt", "w")
 	number = file.write("New things")
