@@ -1,19 +1,19 @@
-# °ò¥»¤¶²Ğ
+# åŸºæœ¬ä»‹ç´¹
 
-	Ãş§O(class)¬O³W¹ºª«¥ó(object)ªºÂÅ¹Ï¡A¤Z¬Oª«¥óªºÄİ©Ê(attribute)¤Î¤èªk (method) ³£­n¦bÃş§O¤¤©w¸q¡A»yªk¦p¤U:
+é¡åˆ¥(class)æ˜¯è¦åŠƒç‰©ä»¶(object)çš„è—åœ–ï¼Œå‡¡æ˜¯ç‰©ä»¶çš„å±¬æ€§(attribute)åŠæ–¹æ³• (method) éƒ½è¦åœ¨é¡åˆ¥ä¸­å®šç¾©ï¼Œèªæ³•å¦‚ä¸‹:
 
-		class ClassName:
-			<statement-1>
-			.
-			.
-			.
-			<statement-N>
+	class ClassName:
+		<statement-1>
+		.
+		.
+		.
+		<statement-N>
 
-# Ãş§Oªº°ò¥»·§©À
+# é¡åˆ¥çš„åŸºæœ¬æ¦‚å¿µ
 
-	ª½±µ¥ı¥H¤U­±¬°¨Ò:
+ç›´æ¥å…ˆä»¥ä¸‹é¢ç‚ºä¾‹:
 	
-¿é¤J:	
+è¼¸å…¥:	
 	
 	class fruit:
 	  num = 7
@@ -25,68 +25,75 @@
 	print(apple.num)
 	print(apple.f())
 
-¿é¥X:
+è¼¸å‡º:
 
 	<class '__main__.fruit'>
 	7
 	hello	
 	
-1. ¦b¨Ò¤l¤¤,­º¥ı§Q¥Îclass©w¸qÃş§Ofruit, ¦A§Q¥ÎfruitÃş§Oªº«Øºc¤l(constructor)«Ø¥ßªºÃş§Oª«¥ó«ü¬£µ¹ÅÜ¼Æapple, ©Ò¿×«Øºc¤l¬O¥ÎÃş§O¦WºÙ¥[¤W¤p¬A©·
-2. ¥Ñtype()¥i¬İ¥XÅÜ¼Æapple¬O__main__§@¥Î°ì¤Uªºfruit«¬ºA
-3. Ãş§O¤¤ªºÅÜ¼Æ¥iµø¬°Ãş§OÄİ©Ê(class attribute), ¥i§Q¥Îobj.nameªº¤è¦¡¤Ş¥XÄİ©Ê¤º®e
-4. Ãş§O¤¤ªº¨ç¼Æ³QºÙ¬°¤èªk(method), ¦P¼Ë¥i§Q¥Îobj.nameªº¤è¦¡¤Ş¥X¨ç¼Æ, ¦b«Ø¥ß¤èªk®É¥²¶·¦³¤@­ÓÃB¥~ªº°Ñ¼Æ¦WºÙ, ³q±`³£¨Ï¥Îself
+1. åœ¨ä¾‹å­ä¸­,é¦–å…ˆåˆ©ç”¨classå®šç¾©é¡åˆ¥fruit, å†åˆ©ç”¨fruité¡åˆ¥çš„å»ºæ§‹å­(constructor)å»ºç«‹çš„é¡åˆ¥ç‰©ä»¶æŒ‡æ´¾çµ¦è®Šæ•¸apple, æ‰€è¬‚å»ºæ§‹å­æ˜¯ç”¨é¡åˆ¥åç¨±åŠ ä¸Šå°æ‹¬å¼§
+2. ç”±type()å¯çœ‹å‡ºè®Šæ•¸appleæ˜¯__main__ä½œç”¨åŸŸä¸‹çš„fruitå‹æ…‹
+3. é¡åˆ¥ä¸­çš„è®Šæ•¸å¯è¦–ç‚ºé¡åˆ¥å±¬æ€§(class attribute), å¯åˆ©ç”¨obj.nameçš„æ–¹å¼å¼•å‡ºå±¬æ€§å…§å®¹
+4. é¡åˆ¥ä¸­çš„å‡½æ•¸è¢«ç¨±ç‚ºæ–¹æ³•(method), åŒæ¨£å¯åˆ©ç”¨obj.nameçš„æ–¹å¼å¼•å‡ºå‡½æ•¸, åœ¨å»ºç«‹æ–¹æ³•æ™‚å¿…é ˆæœ‰ä¸€å€‹é¡å¤–çš„åƒæ•¸åç¨±, é€šå¸¸éƒ½ä½¿ç”¨self
 
-# Ãö©óselfªº¨Ï¥Î
+# é—œæ–¼selfçš„ä½¿ç”¨
 	
-	* ¦b¤èªk¤¤ªº²Ä¤@­Ó°Ñ¼Æself¥NªíÃş§Oªºª«¥ó
+* åœ¨æ–¹æ³•ä¸­çš„ç¬¬ä¸€å€‹åƒæ•¸selfä»£è¡¨é¡åˆ¥çš„ç‰©ä»¶
 
-¿é¤J:	
-		class fruit:
-			def show(self):
-				print(self)
+è¼¸å…¥:	
+
+	class fruit:
+		def show(self):
+			print(self)
 		 
-		a = fruit()
-		a.show()	
-¿é¥X:			
-		<__main__.fruit object at 0x00000237A6F459E8>	
+	a = fruit()
+	a.show()
 	
+è¼¸å‡º:		
 
-	* ²Ä¤@­Ó°Ñ¼Æ¦W¥i¥H¬O¨ä¥L¦r
+	<__main__.fruit object at 0x00000237A6F459E8>	
+	
+* ç¬¬ä¸€å€‹åƒæ•¸åå¯ä»¥æ˜¯å…¶ä»–å­—
 
-¿é¤J:	
-		class fruit:
-			def show(apple):
-				print(apple)
+è¼¸å…¥:	
+
+	class fruit:
+		def show(apple):
+			print(apple)
 		 
-		a = fruit()
-		a.show()	
-¿é¥X:	
-		<__main__.fruit object at 0x000001D232EE5E80>	
-
-	* ¦b¤£¦P¤èªk¤¤ªº²Ä¤@­Ó°Ñ¼Æ¨ä¹ê³£«ü¦V¦P¤@ª«¥ó
+	a = fruit()
+	a.show()	
 	
-¿é¤J:
-		class fruit:
-			def show(apple):
-				print(apple)
+è¼¸å‡º:	
+
+	<__main__.fruit object at 0x000001D232EE5E80>	
+
+* åœ¨ä¸åŒæ–¹æ³•ä¸­çš„ç¬¬ä¸€å€‹åƒæ•¸å…¶å¯¦éƒ½æŒ‡å‘åŒä¸€ç‰©ä»¶
+	
+è¼¸å…¥:
+
+	class fruit:
+		def show(apple):
+			print(apple)
 			
-			def show2(banana):
-				print(banana)
+		def show2(banana):
+			print(banana)
 
-		a = fruit()
-		a.show()
-		a.show2()	
-¿é¥X: 	
-		<__main__.fruit object at 0x0000029EB8045EF0>
-		<__main__.fruit object at 0x0000029EB8045EF0>	
+	a = fruit()
+	a.show()
+	a.show2()	
 	
+è¼¸å‡º: 	
+
+	<__main__.fruit object at 0x0000029EB8045EF0>
+	<__main__.fruit object at 0x0000029EB8045EF0>	
 
 	
-# ¹êÅé(instance)
+# å¯¦é«”(instance)
 
-	* §Q¥Î¦W¬°__init__()ªº¤èªk¥i¥H¦bÃş§O¤¤«Ø¥ß¹êÅé, ¦¹¤èªk³QºÙ¬°«Øºc¤l(constructor)
+* åˆ©ç”¨åç‚º__init__()çš„æ–¹æ³•å¯ä»¥åœ¨é¡åˆ¥ä¸­å»ºç«‹å¯¦é«”, æ­¤æ–¹æ³•è¢«ç¨±ç‚ºå»ºæ§‹å­(constructor)
 
-¿é¤J:
+è¼¸å…¥:
 
 	class fruit:
 		def __init__(self):
@@ -97,15 +104,15 @@
 	print(a.name)
 	print(a.color)
 
-¿é¥X:
+è¼¸å‡º:
 	
 	apple
 
-	¦b¨Ò¤l¤¤,¦b__init__()¤¤«Ø¥ßÄİ©Êname, ¦¹Äİ©Ê¤S³QºÙ¬°¹êÅéÄİ©Ê(instance attribute), ¦P¼Ë¥i§Q¥Îobj.nameªº¤è¦¡¤Ş¥XÄİ©Ê¤º®e
+åœ¨ä¾‹å­ä¸­,åœ¨__init__()ä¸­å»ºç«‹å±¬æ€§name, æ­¤å±¬æ€§åˆè¢«ç¨±ç‚ºå¯¦é«”å±¬æ€§(instance attribute), åŒæ¨£å¯åˆ©ç”¨obj.nameçš„æ–¹å¼å¼•å‡ºå±¬æ€§å…§å®¹
 
-	* ¤]¥i¥H¥Î__init__()¤èªkªº°Ñ¼Æ¨Ó³]©w¡A¦¹®É´N­n¦b«Ø¥ßª«¥ó¹êÅéªº®É­Ô´£¨Ñ°Ñ¼Æ(parameter)¡A¦Ó³]©wªº²Ä¤G­Ó°Ñ¼Æ¤~¬O¿é¤Jªº²Ä¤@­Ó°Ñ¼Æ
+* ä¹Ÿå¯ä»¥ç”¨__init__()æ–¹æ³•çš„åƒæ•¸ä¾†è¨­å®šï¼Œæ­¤æ™‚å°±è¦åœ¨å»ºç«‹ç‰©ä»¶å¯¦é«”çš„æ™‚å€™æä¾›åƒæ•¸(parameter)ï¼Œè€Œè¨­å®šçš„ç¬¬äºŒå€‹åƒæ•¸æ‰æ˜¯è¼¸å…¥çš„ç¬¬ä¸€å€‹åƒæ•¸
 
-¿é¤J:
+è¼¸å…¥:
 
 	class fruit:
 		def __init__(self, name, color):
@@ -116,7 +123,7 @@
 	print(a.name)
 	print(a.color)
 	
-¿é¥X:
+è¼¸å‡º:
 	
 	apple
 	red
