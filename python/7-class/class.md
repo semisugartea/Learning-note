@@ -127,10 +127,57 @@
 	
 	apple
 	red
-	
-	
-	
-	
-	
-	
-	
+
+* 實體屬性可以在方法中使用
+
+輸入:
+
+	class fruit:
+		def __init__(self, name, color):
+			self.name = name
+			self.color = color
+
+		def good(self):
+			print('Good', self.name)
+
+	a = fruit('apple', 'red')
+	a.good()
+
+輸出:
+
+	good apple
+
+* 如同函數,參數的值可以被設定
+
+輸入:
+
+	class fruit:
+		def __init__(self, name, num = 3):
+			self.name = name
+			self.num = num
+
+		def check(self):
+			num = 1
+			while num <= self.num:
+				print('I have', num, self.name)
+				num += 1
+
+	a = fruit('apple')
+	a.check()
+
+輸出:
+
+	I have 1 apple
+	I have 2 apple
+	I have 3 apple
+
+# 類別屬性與實體屬性
+
+
+
+
+
+
+
+
+
