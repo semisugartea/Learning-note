@@ -346,13 +346,22 @@
 	black
 	class A
 
+* 在建立**方法**時,可直接使用super()調用父類別的方法
 
+輸入:
 
+	class A:
+		def show(self, x):
+			y = x + 2
+			print(y)
 
+	class B(A):
+		def show(self, z):
+			super().show(z)
 
+	banana = B()
+	banana.show(1)
 
+輸出:
 
-
-
-
-
+	3
