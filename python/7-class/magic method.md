@@ -97,8 +97,50 @@ __or__ | \|
     -3
     result3 succeed
 
+# 比較類
 
+* 總覽
 
+方法名   |相應運算子   
+ ------------ | ------------ 
+__lt__ | <
+__le__ | <=
+__eq__ | ==
+__ne__ | !=
+__gt__ | >
+__ge__ | >=
+
+* 若沒有敘述__ne__(),則會回傳__eq__()的回傳值之真假值的相反值
+
+輸入:
+
+    class test:
+        def __init__(self, x):
+            self.x = x
+        def __eq__(self, other):
+            return 'hello'
+
+    first = test(8)
+    second = test(2)
+    result = first != second
+    print(result)
+
+輸出:
+
+    False
+
+# 其他
+
+* 總覽
+
+方法名   |相應內容   
+ ------------ | ------------ 
+__len__ | len()
+__getitem__ | indexing
+__setitem__ | assigning to indexed values
+__delitem__ | deleting indexed values
+__iter__ | iteration over objects (e.g., in for loops)
+__contains__ | in
 
 
 
