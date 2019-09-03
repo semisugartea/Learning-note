@@ -54,34 +54,28 @@
 
     25
 
+# 靜態方法(staticmethod)
 
+* 靜態方法與類別方法相似，可透過類別名呼叫該方法，但不接收任何引數，以下為例
 
-Static Methods{
-Static methods are similar to class methods, except they don't receive any additional arguments; they are identical to normal functions that belong to a class. 
-They are marked with the staticmethod decorator.
-Static methods behave like plain functions, except for the fact that you can call them from an instance of the class.
-ex{
-class Pizza:
-  def __init__(self, toppings):
-    self.toppings = toppings
+輸入：
 
-  @staticmethod
-  def validate_topping(topping):
-    if topping == "pineapple":
-      raise ValueError("No pineapples!")
-    else:
-      return True
+    class person:
+        @staticmethod
+        def greet():
+            print("Hello!")
 
-ingredients = ["cheese", "onions", "spam"]
-if all(Pizza.validate_topping(i) for i in ingredients):
-  pizza = Pizza(ingredients) 
-}
+    person.greet()
+    p1=person()
+    p1.greet()
 
+輸出：
 
+    Hello!
+    Hello!
 
-}
+# Properties
 
-Properties{
 Properties provide a way of customizing access to instance attributes. 
 They are created by putting the property decorator above a method, which means when the instance attribute with the same name as the method is accessed, the method will be called instead. 
 One common use of a property is to make an attribute read-only
