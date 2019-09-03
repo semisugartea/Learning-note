@@ -16,6 +16,14 @@ del敘述的魔術方法是__del__。
 總結上，當物件被指派新的名稱或被放入容器(list,tuple,dictionary)中時，物件的引用計數會增加；當物件被del敘述刪除時，物件的引用計數會減少
 ，而他的參照會被重新指派，或是參照會離開作用域(scope)。當物件的引用計數歸零時，Python會自動刪除它。
 
+例子：
 
+    a = 42  # Create object <42>
+    b = a  # Increase ref. count  of <42> 
+    c = [a]  # Increase ref. count  of <42> 
+
+    del a  # Decrease ref. count  of <42>
+    b = 100  # Decrease ref. count  of <42> 
+    c[0] = -1  # Decrease ref. count  of <42>
 
 
