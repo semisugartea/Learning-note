@@ -32,18 +32,46 @@
  * 函式庫Panda3D:適合3D遊戲
  * 函式庫pygame:適合2D遊戲
 
+# 包裝(Packaging)
 
+ 在Python中，packaging一詞代表要將自己編寫的模組放入標準格式中，使其他開發者能安裝並輕易地使用。這需要使用到模組setuptools和distutils。
+ 包裝的第一步是正確地組織已存在的檔案。將所有想要放入在函式庫的檔案置於同一個父目錄(parent directory)。該目錄需包含__init__.py檔，此檔案可以是空白的但一定要放在目錄中。此目錄被放入另一個目錄中，而這目錄還包含readme和license，以及相當重要的setup.py檔。
+ 例子如下：
 
-Packaging{
-In Python, the term packaging refers to putting modules you have written in a standard format, so that other programmers can install and use them with ease. 
-This involves use of the modules setuptools and distutils. 
-The first step in packaging is to organize existing files correctly. Place all of the files you want to put in a library in the same parent directory. This directory should also contain a file called __init__.py, which can be blank but must be present in the directory.
-This directory goes into another directory containing the readme and license, as well as an important file called setup.py. 
+    Fruit/
+       LICENSE.txt
+       README.txt
+       setup.py
+       fruit/
+          __init__.py
+          apple.py
+          banana.py
+
+ 下一步是編寫setup.py檔。
+ 此檔包含包裝物的訊息，使得在上傳至PyPI後能用pip (name, version, etc.)的方式安裝。
+ setup.py檔的例子如下：
+
+    from distutils.core import setup
+
+    setup(
+       name='Fruit', 
+       version='0.12',
+       packages=['fruit',],
+       license='MIT', 
+       long_description=open('README.txt').read(),
+    )
+
+ 
+
 
 After creating the setup.py file, upload it to PyPI, or use the command line to create a binary distribution (an executable installer).
 To build a source distribution, use the command line to navigate to the directory containing setup.py, and run the command python setup.py sdist.
 Run python setup.py bdist or, for Windows, python setup.py bdist_wininst to build a binary distribution. 
 Use python setup.py register, followed by python setup.py sdist upload to upload a package.
+Finally, install a package with python setup.py install.
+
+
+
 
 The previous lesson covered packaging modules for use by other Python programmers. However, many computer users who are not programmers do not have Python installed. Therefore, it is useful to package scripts as executable files for the relevant platform, such as the Windows or Mac operating systems. This is not necessary for Linux, as most Linux users do have Python installed, and are able to run scripts as they are. 
 
