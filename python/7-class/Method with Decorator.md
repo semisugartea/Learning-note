@@ -76,60 +76,136 @@
 
 # Properties
 
-Properties provide a way of customizing access to instance attributes. 
-They are created by putting the property decorator above a method, which means when the instance attribute with the same name as the method is accessed, the method will be called instead. 
-One common use of a property is to make an attribute read-only
-ex{
-class Pizza:
-  def __init__(self, toppings):
-    self.toppings = toppings
-    
-  @property
-  def pineapple_allowed(self):
-    return False
+* @property可使被裝飾的方法成為屬性，或稱能透過被裝飾的方法呼叫屬性，而此屬性只可讀無法變更
 
-pizza = Pizza(["cheese", "tomato"])
-print(pizza.pineapple_allowed)
-pizza.pineapple_allowed = True
->>>
-False
+輸入：
 
-AttributeError: can't set attribute
->>>
-}
+    class Exam:
+        def __init__(self, score):
+            self._score = score
 
-Properties can also be set by defining setter/getter functions.
-The setter function sets the corresponding property's value.
-The getter gets the value.
-To define a setter, you need to use a decorator of the same name as the property, followed by a dot and the setter keyword.
-The same applies to defining getter functions.
-ex{
-class Pizza:
-  def __init__(self, toppings):
-    self.toppings = toppings
-    self._pineapple_allowed = False
+        @property
+        def myscore(self):
+            return self._score
 
-  @property
-  def pineapple_allowed(self):
-    return self._pineapple_allowed
+    e = Exam(60)
+    print(e.myscore)
+    print(e._score)
+    e.myscore = 70
 
-  @pineapple_allowed.setter
-  def pineapple_allowed(self, value):
-    if value:
-      password = input("Enter the password: ")
-      if password == "Sw0rdf1sh!":
-        self._pineapple_allowed = value
-      else:
-        raise ValueError("Alert! Intruder!")
+輸出：
 
-pizza = Pizza(["cheese", "tomato"])
-print(pizza.pineapple_allowed)
-pizza.pineapple_allowed = True
-print(pizza.pineapple_allowed)
->>>
-False
-Enter the password: Sw0rdf1sh!
-True
->>>
-}
+    60
+    60
+    AttributeError: can't set attribute
+
+* 利用@*被property裝飾的方法名*.setter可使相應的屬性能被重新設定
+
+輸入：
+
+    class Exam:
+        def __init__(self, score):
+            self._score = score
+
+        @property
+        def myscore(self):
+            return self._score
+
+        @myscore.setter
+        def newscore(self, val):
+            if val < 0:
+                self._score = 0
+            elif val > 100:
+                self._score = 100
+            else:
+                self._score = val
+
+
+    e = Exam(60)
+    print(e.myscore)
+    e.newscore=200
+    print(e.myscore)
+    e.newscore=-10
+    print(e.myscore)
+
+
+輸出：
+
+    60
+    100
+    0
+
+在例子中，利用@myscore.setter裝飾newscore()，使得在主程序中，能透過newscore()改變self._score的值，而myscore()再回傳self._score
+
+* 利用@*被property裝飾的方法名*.getter可改變回傳值，但不能修改原屬性
+
+輸入：
+
+    class Exam:
+        def __init__(self, score):
+            self._score = score
+
+        @property
+        def myscore(self):
+            return self._score
+
+        @myscore.getter
+        def plus_score(self):
+            print('Getting...')
+            return self._score +10
+
+
+    e = Exam(60)
+    print(e.myscore)
+    print(e.plus_score)
+    print(e.myscore)
+    e.plus_score = 10
+    print(e.plus_score)
+
+輸出：
+
+    60
+    Getting...
+    70
+    60
+    AttributeError: can't set attribute
+
+* 利用@*被property裝飾的方法名*.deleter可使得在使用del敘述時，被裝飾的方法能呼叫
+
+輸入：
+
+    class Exam:
+        def __init__(self, score):
+            self._score = score
+
+        @property
+        def myscore(self):
+            return self._score
+
+        @myscore.deleter
+        def del_score(self):
+            print('Deleting..')
+            del self._score
+
+
+    e = Exam(60)
+    print(e.myscore)
+    del e.del_score
+    print(e.myscore)
+
+輸出：
+
+    60
+    Deleting..
+    AttributeError: 'Exam' object has no attribute '_score'
+
+
+
+
+
+
+
+
+
+
 
