@@ -61,17 +61,12 @@
        long_description=open('README.txt').read(),
     )
 
+ 在建立setup.py檔後，上傳至PyPI，或是使用command line創造一個binary distribution(可執行的安裝檔)
+ 為了建立source distribution，使用command line切換至包含setup.py的目錄，並執行python setup.py sdist 。
+ 執行python setup.py bdist或是在Windows中可執行python setup.py bdist_wininst以建立一個binary distribution。
+ 使用python setup.py register，在執行python setup.py sdist已上傳封包。
+ 最後，使用python setup.py install安裝封包
  
-
-
-After creating the setup.py file, upload it to PyPI, or use the command line to create a binary distribution (an executable installer).
-To build a source distribution, use the command line to navigate to the directory containing setup.py, and run the command python setup.py sdist.
-Run python setup.py bdist or, for Windows, python setup.py bdist_wininst to build a binary distribution. 
-Use python setup.py register, followed by python setup.py sdist upload to upload a package.
-Finally, install a package with python setup.py install.
-
-
-
 
 The previous lesson covered packaging modules for use by other Python programmers. However, many computer users who are not programmers do not have Python installed. Therefore, it is useful to package scripts as executable files for the relevant platform, such as the Windows or Mac operating systems. This is not necessary for Linux, as most Linux users do have Python installed, and are able to run scripts as they are. 
 
